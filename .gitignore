@@ -1,0 +1,12 @@
+# Python
+**/.conda
+**/__pycache__/
+
+# Houdini
+**/.houdini
+**/backup/
+**/out/
+**/render/
+**/galleries/
+
+**.rat

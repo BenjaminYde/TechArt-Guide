@@ -1,0 +1,168 @@
+{
+  "main": {
+    "id": "ffacf6916998ad2f",
+    "type": "split",
+    "children": [
+      {
+        "id": "fd887013ba20aed6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "45f59451d91cfe6f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PBR.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5d405406621b820e",
+    "type": "split",
+    "children": [
+      {
+        "id": "ff2093dd4ab17dfb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "68b6bdb32a52ae37",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ed90a4445c44522b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "92106cfc27e66115",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 494.5
+  },
+  "right": {
+    "id": "d32f8d6efb3a2f6f",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ee2c3cc7182055f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a81f1f070b91635",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "PBR.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9fe72545732248f3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "PBR.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f8913ae938e6ee99",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "555e4bde501e87a8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "PBR.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "45f59451d91cfe6f",
+  "lastOpenFiles": [
+    "Normal and Height Maps.md",
+    "PBR.md",
+    "MaterialX.md",
+    "Pasted image 20231102223842.png.md",
+    "_Img/normal_maps/tubes_shaded.png",
+    "_Img/normal_maps/diffuse_normal_displacement.png",
+    "_Img/normal_maps/primitive_no_normals.png",
+    "_Img/normal_maps/primitive_smooth_normal.png",
+    "_Img/normal_maps/Pasted image 20231102223842.png",
+    "_Img/normal_maps/normal_color.png",
+    "_Img/normal_maps/normal_mapping.png",
+    "_Img/normal_maps/displacement_mapping.png",
+    "_Img/normal_maps/bump_mapping.png",
+    "_Img/normal_maps/primitive_with_normal.png",
+    "_Img/normal_maps",
+    "_Img"
+  ]
+}
