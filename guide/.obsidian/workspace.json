@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PBR.md",
+                "file": "Light/Understanding Light.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 494.5
+    "width": 336.5
   },
   "right": {
     "id": "d32f8d6efb3a2f6f",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PBR.md",
+                "file": "Light/Understanding Light.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PBR.md",
+                "file": "Light/Understanding Light.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PBR.md"
+                "file": "Light/Understanding Light.md"
               }
             }
           }
@@ -149,8 +149,15 @@
   "active": "45f59451d91cfe6f",
   "lastOpenFiles": [
     "Normal and Height Maps.md",
-    "PBR.md",
     "MaterialX.md",
+    "Light/Understanding Light.md",
+    "Light/_Img/Surface_Interactions.png",
+    "Light/_Img/Electromagnet_Spectrum.png",
+    "Light/_Img/Electromagnet_Color_Spectrum.png",
+    "Light/_Img",
+    "Untitled.md",
+    "Light",
+    "PBR.md",
     "Pasted image 20231102223842.png.md",
     "_Img/normal_maps/tubes_shaded.png",
     "_Img/normal_maps/diffuse_normal_displacement.png",
@@ -159,9 +166,6 @@
     "_Img/normal_maps/Pasted image 20231102223842.png",
     "_Img/normal_maps/normal_color.png",
     "_Img/normal_maps/normal_mapping.png",
-    "_Img/normal_maps/displacement_mapping.png",
-    "_Img/normal_maps/bump_mapping.png",
-    "_Img/normal_maps/primitive_with_normal.png",
     "_Img/normal_maps",
     "_Img"
   ]
