@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Light/Understanding Light.md",
+                "file": "Light/From Light To Color.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Light/Understanding Light.md",
+                "file": "Light/From Light To Color.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Light/Understanding Light.md",
+                "file": "Light/From Light To Color.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Light/Understanding Light.md"
+                "file": "Light/From Light To Color.md"
               }
             }
           }
@@ -148,24 +148,25 @@
   },
   "active": "45f59451d91cfe6f",
   "lastOpenFiles": [
-    "Normal and Height Maps.md",
-    "MaterialX.md",
-    "Light/Understanding Light.md",
-    "Light/_Img/Surface_Interactions.png",
+    "Light/_Img/LMS_Chart.png",
     "Light/_Img/Electromagnet_Spectrum.png",
     "Light/_Img/Electromagnet_Color_Spectrum.png",
+    "Light/_Img/colcon.jpg",
+    "Light/_Img/CIE_Diagram.jpg",
+    "Light/_Img/CIE_Charts.jpg",
+    "Light/From Light To Color.md",
+    "Light/_Img/Surface_Interactions.png",
+    "Light/_Img/Pasted image 20231104224257.png",
+    "Light/_Img/colcon 1.jpg",
+    "blobid1656355160502.jpg",
+    "PBR.md",
+    "Light/Understanding Light.md",
+    "MaterialX.md",
+    "Normal and Height Maps.md",
     "Light/_Img",
     "Untitled.md",
     "Light",
-    "PBR.md",
     "Pasted image 20231102223842.png.md",
-    "_Img/normal_maps/tubes_shaded.png",
-    "_Img/normal_maps/diffuse_normal_displacement.png",
-    "_Img/normal_maps/primitive_no_normals.png",
-    "_Img/normal_maps/primitive_smooth_normal.png",
-    "_Img/normal_maps/Pasted image 20231102223842.png",
-    "_Img/normal_maps/normal_color.png",
-    "_Img/normal_maps/normal_mapping.png",
     "_Img/normal_maps",
     "_Img"
   ]
