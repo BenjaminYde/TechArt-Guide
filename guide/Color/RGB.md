@@ -72,21 +72,6 @@ The implications of gamma variance are significant when it comes to color reprod
 - **Color Balance**: Since gamma affects each of the RGB channels, a discrepancy can also lead to shifts in color balance, skewing the intended hues.
 
 - **Matching Across Devices**: If you're working in a field that requires precise color matching across different devices, gamma variance can be a major issue. For instance, a photographer editing photos on a display with one gamma setting might find that the prints look significantly different because the printer interprets gamma differently.
-### Addressing Gamma Variance
-
-To manage gamma variance, professionals use calibration tools and standardized color spaces. These tools can adjust a display's gamma settings to match a predetermined standard (like sRGB, which specifies a gamma of approximately 2.2). By calibrating all devices in a workflow to the same gamma setting, one can achieve consistent brightness and color rendition across different devices.
-
-![](./_Img/Gamma_Workflow.png)
-
-**INPUT:** The graph represents an image in its initial encoded format as it comes from common file types.
-
-**CONVERSION:** At this stage, the image undergoes a transformation to remove the initial encoding, which prepares it for accurate processing.
-
-**CALCULATIONS:** Here, images are in a linear state that allows for precise lighting calculations and other image manipulations.
-
-**OUTPUT:** After processing, the images are saved in a linear format that preserves the accuracy of the calculations, suitable for further post-processing or storage.
-
-**VIEWING:** Finally, the image is re-encoded for proper viewing on typical display devices, ensuring the visual output matches the intended appearance.
 ## References
 
 [RGB color model - Wikipedia](https://en.wikipedia.org/wiki/RGB_color_model)

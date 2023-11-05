@@ -23,14 +23,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Color/RGB.md",
+                "file": "Color/HDR.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1b88f27a5febd8c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Color/sRGB.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "13954d9d9cac77b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Color/More Color Spaces.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a60c3e84d1551fb1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Color/_Index.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -96,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Color/RGB.md",
+                "file": "Color/_Index.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Color/RGB.md",
+                "file": "Color/_Index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Color/RGB.md"
+                "file": "Color/_Index.md"
               }
             }
           }
@@ -157,29 +193,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ac222c897098363e",
+  "active": "a60c3e84d1551fb1",
   "lastOpenFiles": [
-    "Color/From Light To Color.md",
-    "Color/_Img/Gamma_Workflow.png",
+    "Color/Color Models.md",
+    "Color/File Formats.md",
+    "Color/More Color Spaces.md",
+    "Color/_Img/CIE_Charts.jpg",
+    "Color/_Img/All Color Spaces.png",
     "Color/RGB.md",
+    "Color/sRGB.md",
+    "Color/From Light To Color.md",
+    "Color/_Index.md",
+    "Color/HDR.md",
+    "Color/_Img/sRGB_Chart.png",
     "Color/Understanding Light.md",
+    "Understanding.md",
+    "PBR/MaterialX.md",
+    "PBR/Normal and Height Maps.md",
+    "PBR/PBR.md",
+    "PBR",
+    "Color/_Img/Gamma_vs_Linear.png",
+    "Color/_Img/Gamma_Workflow.png",
     "Color/_Img/Eye_Light_PerceptIon.png",
     "Color/_Img/HSL_Chart.png",
     "Pasted image 20231105005232.png",
     "Color/_Img/TriStimulus_Chart.png",
     "Color/_Img/LMS_Chart.png",
-    "Color/_Img/Electromagnet_Spectrum.png",
-    "Color/_Img/Electromagnet_Color_Spectrum.png",
-    "Light/_Img/colcon.jpg",
-    "Color/_Img/CIE_Diagram.jpg",
-    "PBR.md",
-    "MaterialX.md",
-    "Normal and Height Maps.md",
     "Color/_Img",
-    "Untitled.md",
     "Color",
     "Pasted image 20231102223842.png.md",
-    "_Img/normal_maps",
-    "_Img"
+    "PBR/_Img/normal_maps",
+    "PBR/_Img"
   ]
 }
