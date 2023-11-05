@@ -1,10 +1,8 @@
-## Index
-
-- [Understanding Light](./Understanding%20Light.md)   
-- [From Light To Color](./From%20Light%20To%20Color.md)
-- [RGB](./RGB.md)
-- [sRGB](./sRGB.md)
-- [More Color Spaces](./More%20Color%20Spaces.md)
-- [Color Models](./Color%20Models.md)
-- [HDR](./HDR.md)
-- [File Formats](./File%20Formats.md)
+- [understanding_light](understanding_light.md)   
+- [from_light_to_color](from_light_to_color.md)
+- [rgb](rgb.md)
+- [srgb](srgb.md)
+- [more_color_spaces](more_color_spaces.md)
+- [color_models](color_models.md)
+- [hdr](hdr.md)
+- [file_formats](file_formats.md)

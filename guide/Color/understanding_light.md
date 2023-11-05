@@ -14,14 +14,14 @@
 - The light spectrum consists of a range of colors, often visualized as a rainbow. It spans from violet, with the shortest wavelengths, to red, with the longest.
 - Beyond the visible spectrum, there are forms of light humans can't see, such as ultraviolet (UV) and infrared (IR) light.
 
-![](./_Img/Electromagnet_Spectrum.png)
+![](./_img/Electromagnet_Spectrum.png)
 
 **Wavelengths and Colors:**
 
 - Light's color depends on its wavelength. Shorter wavelengths appear blue or violet, while longer ones look red or orange.
 - White light, like sunlight, is a combination of all colors. When passed through a prism, it disperses into its individual colors, creating a spectrum.
 
-![](./_Img/Electromagnet_Color_Spectrum.png)
+![](./_img/Electromagnet_Color_Spectrum.png)
 
 **Luminosity and Perception:**
 
@@ -45,7 +45,8 @@ We perceive light through a complex process involving both our eyes and our brai
 
 7. **Image Processing**: The brain then processes these signals to create the images we see, flipping them the right way up (as the lens of the eye actually projects an upside-down image onto the retina) and combining the images from each eye to produce a three-dimensional view with depth perception.
 
-![](./_Img/Eye_Light_PerceptIon.png)
+![](./_img/Eye_Light_PerceptIon.png)
+
 ## Light Interaction with Matter
 
 When light encounters matter, several things can happen:
@@ -70,21 +71,24 @@ When light strikes a surface and doesn't reflect or transmit, it gets absorbed. 
 
 Emission refers to the production and release of light by a source. The sun, light bulbs, and fireflies are all examples of sources that emit light. The emitted light can then undergo other interactions like reflection, transmission, or absorption when it encounters other materials.
 
-![](./_Img/Surface_Interactions.png)
+![](./_img/Surface_Interactions.png)
 
 **The Importance of Light in Technology:**
 
 - Light's properties are harnessed in various technologies, from fiber optics, which use light to transmit data over long distances, to lasers used in medical and industrial applications.
+
 ## Hue, Saturation and Luminance
 
 The concepts of hue, saturation, and luminance (or brightness) are central to our understanding of color in both the artistic and scientific communities. They are the three primary characteristics that describe the properties of color that we perceive:
 
-![](./_Img/HSL_Chart.png)
+![](./_img/HSL_Chart.png)
+
 ### Hue
 
 Hue is what we most commonly think of as 'color.' It's the aspect that distinguishes red from blue, orange from yellow, and so on. It corresponds to the dominant wavelength of light when considering color scientifically. In the visible spectrum, hues correspond to light wavelengths that range from deep reds (longer wavelengths) to violets (shorter wavelengths).
 
 On a color wheel, which is a common tool for artists and designers, hues are arranged in a circle, allowing one to see the relationships between the colors, such as primary (red, blue, yellow), secondary (green, orange, purple), and tertiary colors (blues-green, red-violet, etc.).
+
 ### Saturation
 
 Saturation, sometimes referred to as chroma, measures the intensity or purity of a color. A highly saturated hue has a vivid, intense color, while a less saturated hue appears more muted or gray.
@@ -92,6 +96,7 @@ Saturation, sometimes referred to as chroma, measures the intensity or purity of
 In technical terms, saturation is the degree to which a pure color is mixed with white or gray. Imagine adding black or white paint to a pure pigment; this process desaturates the color, making it less pure and reducing its intensity.
 
 In digital media, decreasing the saturation of an image can gradually turn the image into grayscale.
+
 ### Luminance (or Brightness)
 
 Luminance describes the perceived brightness or lightness of a color. A color with higher luminance appears brighter and more light-reflective. In contrast, a color with lower luminance is darker and absorbs more light.
@@ -101,9 +106,11 @@ This is particularly noticeable when you convert a colorful image to black and w
 Luminance is not just the amount of light that comes from a source or object but also how much it appears to reflect or emit light in a given context.
 
 Together, these three attributes allow us to describe any perceivable color. They also allow us to manipulate color in a variety of fields, from painting and printing to digital design and photography. Understanding how these three aspects interplay provides a comprehensive grasp of color manipulation and reproduction. For example, when calibrating a screen or printing, adjustments are often made to hue, saturation, and luminance to achieve accurate color representation.
+
 ## Color vs Chromaticity
 
 Chromaticity and color are terms often used in the field of color science, and while they are related, they refer to different aspects of how we perceive color.
+
 #### Color
 
 Color is the characteristic of visual perception described through color categories, with names such as red, blue, yellow, green, etc. It is a comprehensive concept that includes three dimensions:
@@ -111,6 +118,7 @@ Color is the characteristic of visual perception described through color categor
 - **Hue**: The type of color we perceive, such as red, blue, or yellow, which is determined by the dominant wavelength of light.
 - **Saturation**: The intensity or purity of the color, which defines how vibrant the color is or how much it is diluted by white light.
 - **Brightness/Luminance**: The perceived intensity of the light. Brightness tells us how much light seems to be emitted by a color. In a technical context, luminance is the measurable aspect of how much light is emitted or reflected.
+
 #### Chromaticity
 
 Chromaticity is a specification of the quality of color regardless of its luminance. It tells us about the hue and saturation of the color but not about its brightness. Chromaticity is often represented on a two-dimensional plane, such as the CIE 1931 xy chromaticity diagram, where each point represents a unique hue and saturation but not brightness.

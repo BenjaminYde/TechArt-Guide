@@ -24,7 +24,7 @@ The gamut is determined not by the bit depth but by the color space definition i
 - **Gamut Size:** Largest of the three, it covers about 90% of the visible colors, though some of these colors are actually outside the human visual range.
 - **Why It's Used:** ProPhoto RGB is favored by professional photographers and designers who need to work with a broad color palette for tasks like photo retouching, especially when the final output is going to be printed using high-fidelity techniques.
 
-![](All%20Color%20Spaces.png)
+![](./_img/All%20Color%20Spaces.png)
 
 ## Role of Bit Depth
 

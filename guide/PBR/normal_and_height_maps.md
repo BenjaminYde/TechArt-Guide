@@ -2,16 +2,16 @@ Normal maps are a type of Bump Map. They are a special kind of texture that allo
 
 To really explain how normal mapping works, we will first describe what a “normal” is, and how it is used in realtime lighting. Perhaps the most basic example would be a model where each surface polygon is lit simply according to the surface angles relative to the light. The surface angle can be represented as a line protruding in a perpendicular direction from the surface, and this direction (which is a vector) relative to the surface is called a “surface normal”, or simply, a normal.
 
-![](tubes_shaded.png)
+![](./_img/normal_maps/tubes_shaded.png)
 The model on the right has the same number of polygons as the model on the left, however the shading appears smooth - the lighting across the polygons gives the appearance of a curved surface. Why is this? The reason is that the surface normal at each point used for reflecting light gradually varies across the width of the polygon, so that for any given point on the surface, the light bounces as if that surface was curved and not the flat constant polygon that it really is.
 
-![](primitive_no_normals.png)
+![](./_img/normal_maps/primitive_no_normals.png)
 
 The surface normals are represented by the orange arrows. These are the values used to calculate how light reflects off the surface, so you can see that light will respond the same across the length of each polygon, because the surface normals point in the same direction. This gives the “flat shading”, and is the reason the left cylinder’s polygons appear to have hard edges.
 
 For the smooth shaded cylinder however, the surface normals vary across the flat polygons, as represented here:
 
-![](primitive_smooth_normal.png)
+![](./_img/normal_maps/primitive_smooth_normal.png)
 
 The normal directions gradually change across the flat polygon surface, so that the shading across the surface gives the impression of a smooth curve (as represented by the greeen line). This does not affect the actual polygonal nature of the mesh, only how the lighting is calculated on the flat surfaces. This apparent curved surface is not really present, and viewing the faces at glancing angles will reveal the true nature of the flat polygons, however from most viewing angles the cylinder appears to have a smooth curved surface.
 
@@ -19,7 +19,7 @@ Using this basic smooth shading, the data determining the normal direction is ac
 
 Normal mapping takes this modification of surface normals one step further, by using a texture to store information about how to modify the surface normals across the model. A normal map is an image texture mapped to the surface of a model, similar to regular colour textures, however each pixel in the texture of the normal map (called a texel) represents a deviation in surface normal direction away from the “true” surface normal of the flat (or smooth interpolated) polygon.
 
-![](primitive_with_normal.png)
+![](./_img/normal_maps/primitive_with_normal.png)
 
 ## Normal Maps & Bump Maps
 
@@ -27,11 +27,11 @@ Normal and bump maps create the appearance of additional surface detail by chang
 
 **Bump** **maps** store height deltas as grey levels in a monochrome map.
 
-![](bump_mapping.png)
+![](./_img/normal_maps/bump_mapping.png)
 
 **Normal** **maps** store vectors as RGB in a color map.
 
-![](normal_mapping.png)
+![](./_img/normal_maps/normal_mapping.png)
 
 Because they only change the normal, they **do not affect the silhouette** of the object. For example, if you add normal mapping to a sphere, you can make the surface area of the sphere look rough and craggy, but the edges will still be perfectly smooth.
 
@@ -47,7 +47,7 @@ Z: 0 to 1 : Blue: 128 to 255 <- notice difference
 
 So if you take a totally flat surface, this would be considered (0, 0, 1),  
 which would map to 128, 128, 255
-![](normal_color.png)
+![](./_img/normal_maps/normal_color.png)
 ### Normal Vector Spaces
 
 **Tangent space**
@@ -78,7 +78,7 @@ Displacement maps add new geometry at render time. The renderer subdivides the e
 
 In contrast to Displace Along Normal, this allows parts of a surface to arch over neighbouring parts.
 
-![](displacement_mapping.png)
+![](./_img/normal_maps/displacement_mapping.png)
 
 A heightmap should be a greyscale image, with white areas representing the high areas of your texture and black representing the low areas. Here’s a typical albedo map and a heightmap to match.
 
@@ -86,4 +86,4 @@ Left = only diffuse
 Middle = normal map
 Right = height map
 
-![](diffuse_normal_displacement.png)
+![](./_img/normal_maps/diffuse_normal_displacement.png)

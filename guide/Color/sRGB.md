@@ -1,9 +1,11 @@
 ## sRGB: A Solution for Consistency
 
 sRGB (standard Red Green Blue) is a standard color space that was created to provide a consistent color reproduction across different devices and platforms, addressing the gamma variance issue along with other inconsistencies in color representation.
+
 ### sRGB: Bridging the Gap
 
 sRGB is widely recognized and utilized as the default color space for the internet, many computer applications, and consumer-grade cameras and monitors. The creation of sRGB was a collaborative effort between Microsoft and HP to develop a standard that would ensure a reliable color experience for consumers.
+
 #### Why sRGB?
 
 - **Standardized Gamma**: sRGB specifies a gamma of approximately 2.2, which is a compromise that approximates a linear response for low-intensity values and provides a perceptual non-linearity for higher intensities. This makes it adaptable to a wide range of lighting conditions and devices.
@@ -14,12 +16,13 @@ sRGB is widely recognized and utilized as the default color space for the intern
 
 - **Broad Adoption**: Due to its early introduction and the influence of its creators, sRGB has been broadly adopted by manufacturers, making it a de facto standard for consumer devices and the internet.
 
-![](./_Img/sRGB_Chart.png)
+![](./_img/sRGB_Chart.png)
+
 ### Addressing Gamma with sRGB
 
 sRGB's standard gamma curve addresses the variance of gamma across devices by defining a specific transformation curve. This curve dictates the relationship between the values encoded in an image file and the luminance output on a display. By adhering to this standard, devices can more reliably reproduce the intended appearance of images.
 
-![](./_Img/Gamma_Workflow.png)
+![](./_img/Gamma_Workflow.png)
 
 **INPUT:** The journey begins with the input; images arrive in their initial encoded format (such as JPEG, TIFF, PNG, TGA), which is based on the sRGB gamma curve. This standardization is foundational, as it presumes that the images conform to the sRGB color profile, ensuring a consistent starting point.
 
@@ -55,6 +58,7 @@ Due to these limitations, other color spaces like Adobe RGB, ProPhoto RGB, and D
 ## Gamma to Linear: Better Image Accuracy
 
 The prevalent use of gamma encoding in digital imaging has its roots in the early days of broadcasting and the limitations of CRT displays. However, as technology advanced, the limitations of gamma encoding became apparent, necessitating a shift towards a more precise and accurate method of image handling: linear encoding.
+
 ### Understanding the Limitations of Gamma Encoding
 
 Gamma encoding was developed as a solution to the non-linear way CRT screens reproduced brightness, as well as to efficiently use the limited bandwidth of broadcast signals in accordance with human visual perception. However, this encoding presents challenges:
@@ -64,7 +68,7 @@ Gamma encoding was developed as a solution to the non-linear way CRT screens rep
 
 The need for a more uniform and precise approach to image processing, especially with the advent of digital imaging technology, was the driving force behind the transition to linear space.
 
-![](./_Img/Gamma_vs_Linear.png)
+![](./_img/Gamma_vs_Linear.png)
 
 **Bit Depth and Color Precision**: 
 
