@@ -11,15 +11,26 @@
             "id": "45f59451d91cfe6f",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "Color/_Img/HSL_Chart.png"
+              }
+            }
+          },
+          {
+            "id": "ac222c897098363e",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "Light/From Light To Color.md",
+                "file": "Color/RGB.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,8 +96,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Light/From Light To Color.md",
-                "collapseAll": false,
+                "file": "Color/RGB.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -102,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Light/From Light To Color.md",
+                "file": "Color/RGB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,16 +136,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Light/From Light To Color.md"
+                "file": "Color/RGB.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,26 +157,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "45f59451d91cfe6f",
+  "active": "ac222c897098363e",
   "lastOpenFiles": [
-    "Light/_Img/LMS_Chart.png",
-    "Light/_Img/Electromagnet_Spectrum.png",
-    "Light/_Img/Electromagnet_Color_Spectrum.png",
+    "Color/From Light To Color.md",
+    "Color/_Img/Gamma_Workflow.png",
+    "Color/RGB.md",
+    "Color/Understanding Light.md",
+    "Color/_Img/Eye_Light_PerceptIon.png",
+    "Color/_Img/HSL_Chart.png",
+    "Pasted image 20231105005232.png",
+    "Color/_Img/TriStimulus_Chart.png",
+    "Color/_Img/LMS_Chart.png",
+    "Color/_Img/Electromagnet_Spectrum.png",
+    "Color/_Img/Electromagnet_Color_Spectrum.png",
     "Light/_Img/colcon.jpg",
-    "Light/_Img/CIE_Diagram.jpg",
-    "Light/_Img/CIE_Charts.jpg",
-    "Light/From Light To Color.md",
-    "Light/_Img/Surface_Interactions.png",
-    "Light/_Img/Pasted image 20231104224257.png",
-    "Light/_Img/colcon 1.jpg",
-    "blobid1656355160502.jpg",
+    "Color/_Img/CIE_Diagram.jpg",
     "PBR.md",
-    "Light/Understanding Light.md",
     "MaterialX.md",
     "Normal and Height Maps.md",
-    "Light/_Img",
+    "Color/_Img",
     "Untitled.md",
-    "Light",
+    "Color",
     "Pasted image 20231102223842.png.md",
     "_Img/normal_maps",
     "_Img"
