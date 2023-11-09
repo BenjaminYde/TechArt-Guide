@@ -34,6 +34,32 @@ While the gamut is about the range of colors available, bit depth is about the n
 
 - **16-bit per channel**: This provides 65,536 shades for each primary color, allowing for over 281 trillion possible colors. This makes banding virtually invisible and is much more suitable for high-dynamic-range imaging and extensive color grading.
 
+![](./_img/color_depth_chart.jpg)
+
+![](./_img/color_depth_chart_hue.png)
+
+![](./_img/color_depth_compare.png)
+
+## Color Models
+
+### RGB Color Model
+
+The RGB color model is based on the additive color theory, where colors are created by mixing different amounts of red, green, and blue light. This model is used in electronic displays, such as TVs and computer monitors:
+
+- **Additive Process**: Combining red, green, and blue light in various ways to produce other colors.
+- **Primary Colors**: Red, green, and blue.
+- **Use Cases**: Anything that emits light, such as digital screens.
+
+### CMYK Color Model
+
+The CMYK color model is based on the subtractive color process used in color printing. Unlike RGB, which starts with black and adds color, CMYK starts with white (the paper) and subtracts color using ink:
+
+- **Subtractive Process**: Unlike light, which can combine in various intensities to create colors (as with RGB), inks absorb and reflect light. The combination of these CMYK inks on paper subtracts varying degrees of red, green, and blue from the white light to produce a broad range of colors.
+- **Primary Colors**: Cyan, magenta, yellow, and key (black).
+- **Use Cases**: Color printing.
+
+![Alt text](./_img/rgb_and_cmyk.png)
+
 ## Interesting Video's
 
 - [sRGB or AdobeRGB Color Space? | Ask David Bergman - YouTube](https://www.youtube.com/watch?v=B2ZJx5eDUoc&ab_channel=Adorama)

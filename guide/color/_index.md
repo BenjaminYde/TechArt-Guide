@@ -3,6 +3,5 @@
 - [rgb](rgb.md)
 - [srgb](srgb.md)
 - [more_color_spaces](more_color_spaces.md)
-- [color_models](color_models.md)
 - [hdr](hdr.md)
 - [file_formats](file_formats.md)
