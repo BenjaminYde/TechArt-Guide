@@ -4,7 +4,12 @@
 
 Focal length is the distance, measured in millimeters (mm), between the point of convergence of your lens and the sensor or film recording the image. The focal length of your digital camera lens determines the lens's **angle of view** (how much of the scene will be captured) and the **magnification** (how large individual elements will be).  Smaller numbers have a wider angle of view and show more of the scene, while larger numbers have a narrower angle of view and show less.
 
-![alt text](./static/lenses/image-7.png)
+  <img src="./static/lenses/focal_length_1.png" alt="Img" style="width: 83%;">
+
+<p>
+  <img src="./static/lenses/focal_length_2.png" alt="Img" style="width: 33.6%;">
+  <img src="./static/lenses/focal_length_3.png" alt="Img" style="width: 49%;">
+</p>
 
 A camera's angle of view can be measured horizontally, vertically, or diagonally:
 
@@ -76,6 +81,10 @@ On the right, the same 50mm lens on a full-frame sensor yields a broader field o
 
 This side-by-side illustrates crop factor in practice. To calculate it, divide the diagonal of a full-frame sensor by that of the smaller sensor. The crop factor (around 3x for Super 16mm) is then multiplied by the lens's focal length to find the equivalent focal length on a full-frame sensor. For example, a 50mm lens on a Super 16mm sensor acts like a 150mm lens on full-frame (50mm x 3). The actual crop factor depends on the exact dimensions of the sensor.
 
+![alt text](./static/lenses/focal_length_vs_sensor_size.png)
+
+To get the same Field Of View (FOV) on a smaller sensor, you need a shorter focal length.
+
 ## Resolution & Pixel Count
 
 For digital sensors, resolution is s the number of individual pixels on a given sensor that contribute to the final image. This can be measured in horizontal x vertical. For instance 1920 x 1080 is the standard pixel count for HD cameras.
@@ -145,9 +154,20 @@ To maintain a consistent field of view with varying sensor sizes while controlli
 
 - **DoF and Sensor Size Correlation**: For instance, shooting with a Full Frame sensor at T2.8 can result in a depth of field comparable to a Super-35 sensor at T1.4. Understanding this relationship ensures creative intentions are met without compromising the desired visual outcome.
 
+## Understanding Sensor Size, Focal Length, and Field of View
+
+The Field of View (FOV) of a camera is a critical concept that describes the extent of the observable world at any given moment through the camera lens. It is directly related to the size of the camera's sensor and the focal length of the lens.
+
+The Calculation of the FOV involves applying a little trigonometry.
+
+![alt text](./static/lenses/fov_formula_1.png)
+![alt text](./static/lenses/fov_formula_2.png)
+![alt text](./static/lenses/fov_formula_3.png)
+
 ## References
 
 - https://photographylife.com/what-is-focal-length-in-photography
 - https://capturetheatlas.com/what-is-focal-length/
 - https://capturetheatlas.com/camera-sensor-size/
 - https://vmi.tv/blog/learn-help/guide-to-sensor-sizes-and-lens-formats/
+- https://vfxcamdb.com/wp-content/uploads/2016/11/Panavision-Sensor-Size-Field-of-View.pdf
