@@ -19,4 +19,6 @@ Want to see what topics are in todo? See the **index per category**.
   - [HDR](./guide/color/hdr.md)
   - TODO: File Formats
 - [Camera's](./guide/camera/_index.md)   
+  - [Shutter Speed](./guide/camera/shutter_speed.md)
   - [Lenses, Focal Length & Sensors](./guide/camera/lenses.md)
+s
