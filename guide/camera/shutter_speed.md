@@ -31,6 +31,20 @@ When you press the shutter button on a camera, the shutter opens and allows ligh
 
 ![alt text](static/shutter/image.png)
 
+## Shutter Types
+
+### Global Shutter
+
+Cameras with a global shutter capture the entire image simultaneously. When the shutter is triggered, every pixel on the sensor starts and stops exposure at the exact same moment. This uniform exposure ensures that moving objects are captured without distortion, making global shutters ideal for fast-action photography, such as sports or high-speed events, and for scientific and industrial applications where precise motion capture is crucial.
+
+### Rolling Shutter
+
+Cameras with a rolling shutter capture the image sequentially, one row or column of pixels at a time, rather than all at once. This means that the top of the image is captured slightly before the bottom (or the left before the right, depending on the sensor orientation). While this method is more efficient and less costly to implement, it can lead to distortions in images of fast-moving objects or when the camera itself moves rapidly during exposure.
+
+![alt text](static/shutter/shutter_lines.png)
+![alt text](static/shutter/global_vs_rolling.png)
+
 ## Reference
 
 - https://photographylife.com/what-is-shutter-speed-in-photography
+- https://www.baslerweb.com/en/Learning/camera-selection/
