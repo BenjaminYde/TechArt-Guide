@@ -1,6 +1,9 @@
 # Index
 
-- [Lenses, Focal Length & Sensos]
+- [Shutter Speed](./shutter_speed.md)
+- [Aperture](./aperture.md)
+- [ISO](./iso.md)
+- [Lenses, Focal Length & Sensors](./lenses.md)
  Camera Types and Functions
 DSLR vs. Mirrorless Cameras: Understanding their differences and applications.
 Medium Format Cameras: Their role in high-resolution photography.

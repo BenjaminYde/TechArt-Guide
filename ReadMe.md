@@ -20,5 +20,6 @@ Want to see what topics are in todo? See the **index per category**.
   - TODO: File Formats
 - [Camera's](./guide/camera/_index.md)   
   - [Shutter Speed](./guide/camera/shutter_speed.md)
+  - [Aperture](./guide/camera/aperture.md)
+  - [ISO](./guide/camera/iso.md)
   - [Lenses, Focal Length & Sensors](./guide/camera/lenses.md)
-s
