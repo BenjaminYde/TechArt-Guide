@@ -23,3 +23,4 @@ Want to see what topics are in todo? See the **index per category**.
   - [Aperture](./guide/camera/aperture.md)
   - [ISO](./guide/camera/iso.md)
   - [Lenses, Focal Length & Sensors](./guide/camera/lenses.md)
+  - [Depth of Field](./guide/camera/depth_of_field.md)
