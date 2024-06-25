@@ -17,7 +17,7 @@ Want to see what topics are in todo? See the **index per category**.
   - [sRGB](./guide/color/srgb.md)
   - [More Color Spaces](./guide/color/more_color_spaces.md)
   - [HDR](./guide/color/hdr.md)
-  - [File Formats](./guide/color/file_formats)
+  - [File Formats](./guide/color/file_formats.md)
 - [Camera's](./guide/camera/_index.md)   
   - [Shutter Speed](./guide/camera/shutter_speed.md)
   - [Aperture](./guide/camera/aperture.md)
