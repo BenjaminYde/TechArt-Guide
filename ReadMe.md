@@ -24,3 +24,5 @@ Want to see what topics are in todo? See the **index per category**.
   - [ISO](./guide/camera/iso.md)
   - [Lenses, Focal Length & Sensors](./guide/camera/lenses.md)
   - [Depth of Field](./guide/camera/depth_of_field.md)
+- [USD](./guide/usd/_index.md)
+  - [Introduction To USD](./guide/usd/introduction.md)
