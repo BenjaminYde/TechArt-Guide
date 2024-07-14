@@ -17,6 +17,8 @@ Before the adoption of Universal Scene Description (USD), the 3D content creatio
 
 Recognizing these challenges, Pixar released the first open-source version of USD in 2016 as OpenUSD. USD is not just a file format but a comprehensive system which was designed as a solution to these longstanding issues, offering a way to describe, interchange, and augment 3D scene data seamlessly across various applications and platforms.
 
+![Img](./static/openusd_logo.png)
+
 ### Core Features and Benefits of USD
 
 - **Unified Language for 3D Data**: USD acts as a comprehensive framework for defining, assembling, and editing 3D data across different content creation software. It organizes low-level data and offers high-level schemas for 3D concepts like meshes and transforms. This consistency greatly reduces errors and streamlines production processes.
@@ -81,9 +83,30 @@ Strength of Opinions:
 
 - **Specialize**: Opinions in the specializing prim’s own layer are stronger, meaning they override the properties of the higher layers in case of conflict.
 
+## The Alliance of USD
+
+The Alliance for OpenUSD (AOUSD) is an open, non-profit organization dedicated to promoting the interoperability of 3D content through OpenUSD (Universal Scene Description). Standardizing the 3D ecosystem will enable developers and content creators to describe, compose, and simulate large-scale 3D projects and build an ever-widening range of 3D-enabled products and services.
+
+![Img](./static/aousd_logo.png)
+
+### Key Members of the USD Alliance
+
+- **Pixar Animation Studios**: The originator of USD, Pixar continues to lead the development and refinement of the system, ensuring it meets the rigorous demands of high-end animation and visual effects production.
+
+- **Houdini**: SideFX's Houdini is renowned for its powerful procedural generation and visual effects tools. With USD integration, Houdini users can now seamlessly import, export, and manipulate USD files, allowing for more efficient collaboration and asset sharing across different stages of production.
+
+- **NVIDIA**: As a leader in graphics processing and AI, NVIDIA has integrated USD into its Omniverse platform, enabling real-time collaboration and simulation for design and visualization projects.
+
+- **Autodesk**: A major player in 3D design, engineering, and entertainment software, Autodesk supports USD across its suite of tools, including Maya and 3ds Max, facilitating seamless interoperability and enhanced workflow efficiency.
+
+- **Adobe**: Adobe has embraced USD within its Substance suite, providing artists with robust tools for texturing and material creation that are fully compatible with USD's scene description capabilities.
+
+- **Epic Games**: The creator of Unreal Engine, Epic Games has incorporated USD support to enhance its real-time 3D creation capabilities, enabling more streamlined asset management and interoperability.
+
 ## References
 
 - https://openusd.org/dev/index.html
 - https://www.sidefx.com/docs/houdini/solaris/usd.html
 - https://docs.omniverse.nvidia.com/usd/latest/index.html
 - https://remedy-entertainment.github.io/USDBook/index.html
+- https://aousd.org
