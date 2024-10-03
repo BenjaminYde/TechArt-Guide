@@ -1,7 +1,7 @@
-# Welcome to the Houdini Guide 📚
+# Welcome to the Game Graphics Guide 📚
 
-This repository is a Houdini guide designed to be opened as regular Markdown in the browser of in VS Code. 
-It contains extensive documentation, examples and best practices to help you become a proficient Houdini technical artist.
+This repository is a Game Graphics guide designed to be opened as regular Markdown in the browser of in VS Code. 
+It contains extensive documentation, examples and best practices to help you become a proficient game developer / tech artist.
 
 # Guide Index 🗂️
 
