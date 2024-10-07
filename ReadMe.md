@@ -34,3 +34,4 @@ Want to see what topics are in todo? See the **index per category**.
   - [Synchronisation](./guide/vulkan_rendering/synchronisation.md)
 - [USD](./guide/usd/_index.md)
   - [Introduction To USD](./guide/usd/introduction.md)
+  - [Terminology](./guide/usd/terminology.md)
