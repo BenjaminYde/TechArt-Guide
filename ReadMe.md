@@ -1,7 +1,7 @@
-# Welcome to the Game Graphics Guide 📚
+# Welcome to the TechArt Guide 📚
 
-This repository is a Game Graphics guide designed to be opened as regular Markdown in the browser of in VS Code. 
-It contains extensive documentation, examples and best practices to help you become a proficient game developer / tech artist.
+This repository is a TechArt guide designed to be opened as regular Markdown in the browser of in VS Code. 
+It contains extensive documentation, examples and best practices to help you become a proficient tech artist.
 
 # Guide Index 🗂️
 
