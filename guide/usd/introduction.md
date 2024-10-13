@@ -105,9 +105,10 @@ The Alliance for OpenUSD (AOUSD) is an open, non-profit organization dedicated t
 
 ## References
 
-- https://openusd.org/dev/index.html
-- https://www.sidefx.com/docs/houdini/solaris/usd.html
-- https://docs.omniverse.nvidia.com/usd/latest/index.html
-- https://remedy-entertainment.github.io/USDBook/index.html
-- https://lucascheller.github.io/VFX-UsdSurvivalGuide/index.html
-- https://aousd.org
+- [OpenUSD](https://openusd.org/dev/index.html)
+- [Houdini Solaris USD](https://www.sidefx.com/docs/houdini/solaris/usd.html)
+- [Nvidia Omniverse USD](https://docs.omniverse.nvidia.com/usd/latest/index.html)
+- [Book of USD](https://remedy-entertainment.github.io/USDBook/index.html)
+- [USD Survival Guide](https://lucascheller.github.io/VFX-UsdSurvivalGuide/index.html)
+- [Alliance for OpenUSD](https://aousd.org)
+- [USD Working Group](https://lf-aswf.atlassian.net/wiki/spaces/WGUSD/overview?)homepageId=11272194
