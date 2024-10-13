@@ -1,3 +1,5 @@
+# Normal Maps
+
 Normal maps are a type of Bump Map. They are a special kind of texture that allow you to add surface detail such as bumps, grooves, and scratches to a model which catch the light as if they are represented by real geometry.
 
 To really explain how normal mapping works, we will first describe what a “normal” is, and how it is used in realtime lighting. Perhaps the most basic example would be a model where each surface polygon is lit simply according to the surface angles relative to the light. The surface angle can be represented as a line protruding in a perpendicular direction from the surface, and this direction (which is a vector) relative to the surface is called a “surface normal”, or simply, a normal.
@@ -21,7 +23,7 @@ Normal mapping takes this modification of surface normals one step further, by u
 
 ![](./_img/normal_maps/primitive_with_normal.png)
 
-## Normal Maps & Bump Maps
+## Difference Between Normal Maps & Bump Maps
 
 Normal and bump maps create the appearance of additional surface detail by changing normals at render time, without actually creating additional geometry. This makes them faster and use less memory.
 
@@ -35,19 +37,20 @@ Normal and bump maps create the appearance of additional surface detail by chang
 
 Because they only change the normal, they **do not affect the silhouette** of the object. For example, if you add normal mapping to a sphere, you can make the surface area of the sphere look rough and craggy, but the edges will still be perfectly smooth.
 
-### Why the bluey-purple colours?
+## Why the bluey-purple colours?
 
 Understanding this is not vital for using normal maps! It’s ok to skip this paragraph. However if you really want to know: The RGB colour values are used to store the X,Y,Z direction of the vector, with Z being “up” (contrary to Unity’s usual convention of using Y as “up”). In addition, the values in the texture are treated as having been halved, with 0.5 added. This allows vectors of all directions to be stored. Therefore, to convert an RGB colour to a vector direction, you must multiply by two, then subtract 1. For example, an RGB value of (0.5, 0.5, 1) or #8080FF in hex results in a vector of (0,0,1) which is “up” for the purposes of normal-mapping - and represents no change to the surface of the model. This is the colour you see in the flat areas of the “example” normal map earlier on this page.
 
 So the colour defines the amount on each axis
 
-X: -1 to +1 : Red: 0 to 255
-Y: -1 to +1 : Green: 0 to 255
-Z: 0 to 1 : Blue: 128 to 255 <- notice difference
+- **Red (X-axis)**: Encodes direction along the X-axis, ranging from -1 to +1, mapped to 0-255 in the red channel.
+- **Green (Y-axis)**: Encodes direction along the Y-axis, also ranging from -1 to +1, mapped to 0-255 in the green channel.
+- **Blue (Z-axis)**: Encodes direction along the Z-axis, but only from 0 to +1 (since normals generally face outward), mapped to 128-255 in the blue channel.
 
-So if you take a totally flat surface, this would be considered (0, 0, 1),  
-which would map to 128, 128, 255
+The default normal for a flat surface is (0, 0, 1), which corresponds to the color RGB (128, 128, 255), or #8080FF.
+
 ![](./_img/normal_maps/normal_color.png)
+
 ### Normal Vector Spaces
 
 **Tangent space**
@@ -58,7 +61,12 @@ Stores normals relative to world space. If the surface moves or deforms, it will
 
 **Object space**
 Stores normals relative to the object transform. Objects can move, but if they deform the normals will not look right.
-### How do I get or make normal maps?
+
+## Why scaling the Z component of a normal is incorrect
+
+When you scale only the Z component of a normal vector (or any single component), the direction of the vector changes, and it may no longer be unit-length (normalized). Normal vectors need to remain normalized (with a length of 1) to correctly represent direction. If the Z component is scaled, it introduces a shear effect, distorting the direction and invalidating the normal's ability to represent accurate surface angles.
+
+## How do I get or make normal maps?
 
 Commonly, Normal Maps are produced by 3D or Texture artists in conjunction with the model or textures they are producing, and they often mirror the layout and contents of the Albedo map. Sometimes they are produced by hand, and sometimes they are rendered out from a 3D application.
 
