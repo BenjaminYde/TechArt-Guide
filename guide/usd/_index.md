@@ -9,5 +9,5 @@
   - [Opinions and Overrides](./terminology/opinion_override.md)
   - [Composition Arcs](./terminology/composition_arc.md)
   - [Schemas](./terminology/schemas.md)
-- [USD Sample Projects](./test_projects.md)
+- [USD Sample Projects](./sample_projects.md)
 - [USD Scripting](./scripting.md)
