@@ -57,45 +57,53 @@ The same stage view panel but from the the full Houdini desktop:
 
 ### **Attributes**:
 
-- **Data Types**: Attributes can hold various data types, including scalars (int, float), vectors (float3), matrices, arrays, and even custom types. For example, float size = 1.0 defines a Cube prim’s uniform size.
+- **Data Types**: Attributes can hold various data types, including scalars (int, float), vectors (float3), matrices, arrays, and even custom types. For example, `size = 0.35` in the cube_3 prim defines a uniform scaling factor. Other attributes like `LocalToWorldTransform` store matrix data, representing the transformation from local space to world space.
 - **Time-Sampled Data**: Attributes can store time-varying data, enabling animation by sampling attribute values over time.
+
+In the screenshot, for `/cubes/cube_3`, you can see various attributes such as:
+- **LocalToWorldTransform**: A matrix that defines the transformation from the cube’s local space to world space.
+- **Visibility**: This attribute is set to `inherited`, meaning it follows the visibility settings from parent prims.
+- **size**: A float attribute controlling the cube’s size.
 
 ### **Relationships**:
 
-- **References** to other prims or properties, allowing for complex connections within the scene graph like material assignments or hierarchical structures.
+- **References** to other prims or properties, allowing for complex connections within the scene graph like material assignments or hierarchical structures. For example, the `Resolved Material` attribute points to `/materials/mtlx_blue`, showing how cube_3 is linked to a specific material.
 
-> [!CAUTION]
-> TODO: Add picture here...
+### Example of the Properties in Houdini
+
+Example of the scene graph tree view together with the scene graph details view:
+
+![Img](./static/cubes/cubes_houdini_stage_details.png)
 
 # Paths
 
-**Definition**: Paths are string representations that uniquely identify prims and properties within the USD scene hierarchy. 
+**Definition**: Paths are string representations that uniquely identify prims and properties within the USD scene hierarchy.
+
+In the scene displayed in the screenshot, paths are visible in the **Scene Graph Path** column, where each prim, such as `/cubes/cube_3`, has a specific location in the hierarchy.
 
 ### Path Syntax:
 
-Just like folders, paths can be relative or absolute.
+Just like folders in a filesystem, paths in USD can be relative or absolute.
 
-- **Absolute Paths**: Always starts with an `/` and provides the full path from the root. For example:`/World/Geometry/Car`. 
-- **Relative Paths**: Starts with a dot `.` to specify the current prim location or double dot `..` specify the parent prim location.
+- **Absolute Paths**: Always starts with a `/` and provides the full path from the root. For example, the path `/cubes/cube_3` in the screenshot specifies the absolute path to the third cube in the scene.
+- **Relative Paths**: These paths are relative to the current prim location. They start with a single dot `.` to specify the current prim location, or a double dot `..` to refer to the parent prim. If you were working within `/cubes/cube_3`, `../cube_2` would point to the second cube, which is a sibling of `cube_3`.
 
 ### Prim vs. Property Paths:
 
-- **Prim Paths**: These refer to the location of a prim (an object or element) within the scene graph. For example, `/Scene/Character` is a prim path identifying a character in a specific scene.
-- **Property Paths**: These are extensions of prim paths and specify properties or attributes of the prim. For example, in `/Scene/Character.xformOp:translate`, `xformOp:translate` refers to a transformation operation property related to the translation of the character.
+- **Prim Paths**: Refer to the location of a prim (an object or element) within the scene graph. For example, in the screenshot, `/cubes/cube_3` is the prim path identifying the third cube object under the `cubes` transformation group.
+- **Property Paths**: Are extensions of prim paths that specify properties or attributes of the prim. For instance, the path `/cubes/cube_3.xformOp:translate` refers to the transformation operation that defines the translation of `cube_3` within the scene.
 
 ### The Role of the Colon `:` (Namespace)
 
-In the property path (e.g., `xformOp:translate`), the colon separates the property namespace from the actual property name. Namespaces in USD are a way to organize properties and avoid naming conflicts. They are indicated using a colon `:` in property names.
+In USD property paths, the colon `:` separates the property namespace from the property name. This allows for organized property management and avoids naming conflicts.
 
-- **Namespace (xformOp)**: A collection of properties that belong to the same conceptual group. Here, xformOp refers to the namespace that handles transformation operations such as translate, rotate, and scale.
-- **Property Name (translate)**: This is the specific property within the namespace that defines what part of the transformation operation is being addressed (in this case, translation).
+- **Namespace (xformOp)**: In the screenshot, the `xformOp` namespace is part of the property path, indicating a collection of transformation operations such as translation, rotation, and scaling.
+- **Property Name (translate)**: Refers to a specific transformation operation within the `xformOp` namespace. For example, `xformOp:translate` would define the translation component of a transformation, while `xformOp:rotateXYZ` might handle rotation.
 
-> [!CAUTION]
-> TODO: Add picture here...
+This structure is crucial for maintaining clarity when working with complex scenes involving numerous properties and transformations.
 
 ## Metadata
 
 **Definition**: Additional static information attached to prims, properties or layers that provides context or supplementary data not directly affecting the scene's visual representation. Metadata can include details like documentation, authoring information, or any custom data that needs to accompany the scene elements.
 
-> [!CAUTION]
-> TODO: Add picture here...
+![Img](./static/cubes/cubes_houdini_stage_details_metadata.png)
