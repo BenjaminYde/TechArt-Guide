@@ -107,3 +107,71 @@ This structure is crucial for maintaining clarity when working with complex scen
 **Definition**: Additional static information attached to prims, properties or layers that provides context or supplementary data not directly affecting the scene's visual representation. Metadata can include details like documentation, authoring information, or any custom data that needs to accompany the scene elements.
 
 ![Img](./static/cubes/cubes_houdini_stage_details_metadata.png)
+
+## How do USD Prims look like?
+
+Below is an example of a scene in the USD file format (`.usda` format), which is the ASCII (human-readable) representation of USD:
+
+- Two cubes positioned side by side.
+- A camera looking at the scene from above.
+- A sunlight source shining down.
+
+```
+#usda 1.0
+(
+    defaultPrim = "world"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "world"
+{
+    def Xform "cubes"
+    {
+        def Cube "cube_1"
+        {
+            double3 xformOp:translate = (0, 0, 0)
+            float size = 0.5
+            uniform token visibility = "inherited"
+        }
+
+        def Cube "cube_2"
+        {
+	    uniform token[] xformOpOrder = ["xformOp:translate"]
+            double3 xformOp:translate = (0, 2.5, 0)
+            float size = 0.7
+            uniform token visibility = "inherited"
+        }
+    }
+
+    def Xform "cameras"
+    {
+        def Camera "camera1"
+        {
+	    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ"]
+            double3 xformOp:translate = (0, 5, 15)
+            double3 xformOp:rotateXYZ = (-15,0,0)
+            float focalLength = 50.0
+            float horizontalAperture = 24.0
+            float verticalAperture = 18.0
+        }
+    }
+
+    def Xform "lights"
+    {
+        def DistantLight "light1"
+        {
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ"]
+            double3 xformOp:translate = (0, 1.75, 5)
+	    double3 xformOp:rotateXYZ = (-30, 0, 0)
+            color3f inputs:color = (1, 0, 0)
+            float inputs:intensity = 1
+	    bool inputs:normalize = True
+        }
+    }
+}
+```
+
+How it looks like in Houdini when loading it in:
+![Img](./static/cubes/houdini_simple_scene.png)
+
