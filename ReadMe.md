@@ -31,12 +31,14 @@ Want to see what topics are in todo? See the **index per category**.
   - [Introduction To OpenUSD](./guide/usd/introduction.md)
   - Terminology
     - [Primitives](./guide/usd/terminology/prims.md)
-    - [Layers](./guide/usd/terminology/layers.md)
     - [Kind](./guide/usd/terminology/kind.md)
     - [Purpose](./guide/usd/terminology/purpose.md)
+    - [Layers](./guide/usd/terminology/layers.md)
     - [Opinions and Overrides](./guide/usd/terminology/opinion_override.md)
     - [Composition Arcs](./guide/usd/terminology/composition_arc.md)
     - [Schemas](./guide/usd/terminology/schemas.md)
+  - Using USD In Houdini
+    - [Creating and loading USD files](./guide/usd/houdini/creating_and_loading.md) 
   - [USD Sample Projects](./guide/usd/sample_projects.md)
   - [USD Scripting](./guide/usd/scripting.md)
 - [Houdini](./guide/houdini/_index.md)

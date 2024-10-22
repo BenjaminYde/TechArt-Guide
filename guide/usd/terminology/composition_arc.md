@@ -44,7 +44,7 @@ These arcs define how data from different sources is composed, overridden, or au
 - **Lazy Loading**: Payload data is not loaded until explicitly requested, reducing initial load times.
 - **Efficient Scene Handling**: Ideal for large scenes where only a subset of data needs to be loaded at any given time.
 - **Activation Control**: Payloads can be activated or deactivated, giving fine-grained control over scene content.
-- 
+
 ### 4. VariantSet
 
 **Definition**: A VariantSet is a composition arc that allows a prim to define multiple variants—alternative representations or configurations—that can be switched dynamically. This facilitates flexibility in choosing different versions of an asset without altering the scene structure.
