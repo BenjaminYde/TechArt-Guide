@@ -1,0 +1,97 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="sXHfVegiXDXdAI8whB0i">
+    <mxGraphModel dx="1430" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-1" value="VkInstance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="80" y="180" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-2" value="VkPhysicalDevice" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="80" y="220" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-3" value="VkDevice" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="80" y="380" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-4" value="VkPipeline" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="340" y="200" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-5" value="VkCommandBuffer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="340" y="280" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-6" value="VkCommandPool" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="340" y="320" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-7" value="VkQueue" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="345" y="360" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-8" value="VkRenderPass" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="500" y="200" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-9" value="VkImage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="500" y="240" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-10" value="VkBuffer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="505" y="320" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-11" value="VkFrameBuffer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="505" y="360" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-12" value="VkDescriptorSet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="505" y="400" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-13" value="vkSwapchainKHR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="80" y="420" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-14" value="VkFence" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="635" y="200" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-15" value="VkSemaphore" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="635" y="240" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-16" value="VkQueueFamilyProperties" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="120" y="300" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-17" value="VkPhysicalDeviceFeatures" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="120" y="260" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-19" value="VkSurfaceCapabilitiesKHR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontColor=#333333;shadow=0;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="110" y="460" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-20" value="VkSurfaceFormatKHR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="110" y="500" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-21" value="VkPresentModeKHR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="110" y="540" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-23" value="VkPipelineLayout" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="340" y="240" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-24" value="VkDescriptorSetLayout" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="505" y="440" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-25" value="VkDeviceMemory" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="775" y="200" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-26" value="VkDescriptorPool" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="500" y="480" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-27" value="VmaAllocation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="785" y="240" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-28" value="VmaAllocator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="790" y="280" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-29" value="VkPhysicalDeviceProperties" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="120" y="340" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-31" value="VkApplicationInfo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="80" y="140" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9zA8bDKbN5jOhT-Oazy1-32" value="VkImageView" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#a20025;strokeColor=#6F0000;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="500" y="280" width="100" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
