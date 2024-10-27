@@ -9,6 +9,7 @@ It contains extensive documentation, examples and best practices to help you bec
 There is **more content incoming** so the categories will **not be visible here** until it is completed.    
 Want to see what topics are in todo? See the **index per category**.
 
+## Visual Language
 
 - [Colors](./guide/color/_index.md)   
   - [Understanding Light](./guide/color/understanding_light.md)   
@@ -24,9 +25,9 @@ Want to see what topics are in todo? See the **index per category**.
   - [ISO](./guide/camera/iso.md)
   - [Lenses, Focal Length & Sensors](./guide/camera/lenses.md)
   - [Depth of Field](./guide/camera/depth_of_field.md)
-- [PBR](./guide/pbr/_index.md)
-  - [Normal And Height Maps](./guide/pbr/normal_and_height_maps.md)
-  - [MaterialX](./guide/pbr/materialx.md)
+
+## Houdini, OpenUSD
+
 - [OpenUSD](./guide/usd/_index.md)
   - [Introduction To OpenUSD](./guide/usd/introduction.md)
   - Terminology
@@ -36,14 +37,20 @@ Want to see what topics are in todo? See the **index per category**.
     - [Layers](./guide/usd/terminology/layers.md)
     - [Opinions and Overrides](./guide/usd/terminology/opinion_override.md)
     - [Composition Arcs](./guide/usd/terminology/composition_arc.md)
-    - [Schemas](./guide/usd/terminology/schemas.md)
-  - Using USD In Houdini
-    - [Creating and loading USD files](./guide/usd/houdini/creating_and_loading.md) 
-  - [USD Sample Projects](./guide/usd/sample_projects.md)
-  - [USD Scripting](./guide/usd/scripting.md)
+    - [Schemas](./guide/usd/terminology/schemas.md) 
+  - [Sample Projects](./guide/usd/sample_projects.md)
+  - [Scripting](./guide/usd/scripting.md)
 - [Houdini](./guide/houdini/_index.md)
   - [COPS](./guide/houdini/cops.md)
-- [Vulkan Rendering](./guide/vulkan/_index.md)
+  - Using OpenUSD In Houdini
+    - [Creating and loading USD files](./guide/houdini/usd/creating_and_loading.md)
+
+## Rendering
+
+- [PBR](./guide/pbr/_index.md)
+  - [Normal And Height Maps](./guide/pbr/normal_and_height_maps.md)
+  - [MaterialX](./guide/pbr/materialx.md)
+- [Vulkan API](./guide/vulkan/_index.md)
   - [About Vulkan](./guide/vulkan/about.md)
   - [Graphics Pipeline](./guide/vulkan/graphics_pipeline.md)
   - [Vulkan Application Flow](./guide/vulkan/vulkan_application_flow.md)
