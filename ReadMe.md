@@ -47,6 +47,8 @@ Want to see what topics are in todo? See the **index per category**.
 
 ## Rendering
 
+- [Math](./guide/math/_index.md)
+  - [Vectors](./guide/math/vectors.md)
 - [PBR](./guide/pbr/_index.md)
   - [Normal And Height Maps](./guide/pbr/normal_and_height_maps.md)
   - [MaterialX](./guide/pbr/materialx.md)

@@ -100,7 +100,7 @@ PNG (Portable Network Graphics) supports various bit depths, allowing for differ
 
 #### Integer vs. Floating Point
 
-- **PNG**: Only supports integer values for bit depth (8-bit and 16-bit per channel). It does not support floating point values.
+- **PNG**: Only supports integer values for bit depth (8-bit and 16-bit per channel). **It does not support floating point values.**
 
 - **OpenEXR**: Supports both 16-bit and 32-bit floating point per channel, which allows for a much wider dynamic range and higher precision, making it ideal for HDR imaging and complex visual effects.
 
@@ -146,19 +146,18 @@ OpenEXR is a high-dynamic-range (HDR) image file format developed by Industrial 
 
 ## TIFF (Tagged Image File Format)
 
-TIFF (Tagged Image File Format) is a flexible, adaptable file format for handling raster graphics. It is widely used in the printing, publishing, and professional photography industries due to its ability to store high-quality images with extensive metadata.
+TIFF (Tagged Image File Format) is a versatile, high-quality raster image format created in the mid-1980s by Aldus Corporation, later acquired by Adobe. Designed to be flexible and adaptable, TIFF was created for industries like professional photography, publishing, and scanning, where retaining image quality, precise color information, and metadata is essential.
+
+TIFF was developed to solve the need for a standardized format that could store high-quality, uncompressed or losslessly compressed images without losing detail. By supporting high bit depths, flexible compression options, and extensive metadata, TIFF remains a staple in industries requiring precision and quality preservation.
 
 ### Use Cases for TIFF
 
-- **Professional Photography**: Used for storing high-quality, uncompressed images that require extensive post-processing and editing without losing detail.
+- **Professional Photography**: Preserves image quality for high-resolution photos, making it ideal for post-processing and archival storage.
+- **Printing and Publishing**: Preferred for print-ready assets due to support for CMYK color spaces and high-quality detail retention.
+- **Medical and Scientific Imaging**: Suitable for storing large, detailed scans (e.g., X-rays, MRI) where data precision is essential.
+- **Document Scanning**: Frequently used in digitizing documents and historical materials for its high-resolution capabilities and metadata support.
 
-- **Scanning and Archiving**: Ideal for scanning documents, artwork, and historical images due to its ability to store high-resolution data and metadata.
-
-- **Printing**: Preferred format for preparing images for high-quality prints due to its lossless nature and support for CMYK color spaces.
-
-- **Medical and Scientific Imaging**: Suitable for applications requiring precise and detailed image representation, such as medical scans and scientific research.
-
-### Key Features of TIFF
+### Key Features of TIF
 
 - **High Bit Depth Support**: TIFF supports a wide range of bit depths, including 1-bit, 8-bit, 16-bit, 24-bit, 32-bit, and even 64-bit (16 bits per channel for RGBA).
 
@@ -170,15 +169,22 @@ TIFF (Tagged Image File Format) is a flexible, adaptable file format for handlin
 
 - **Multi-Platform Support**: Widely supported by various operating systems and image editing software, ensuring broad compatibility and ease of use.
 
-### Advantages of TIFF
+### Disadvantages of TIFF
 
-- **High Image Quality**: Retains maximum image quality due to support for high bit depths and lossless compression, making it ideal for detailed images and professional work.
+- **Large File Sizes**: Due to high bit depths and lossless compression, TIFF files can be much larger than JPEG or PNG, affecting storage and load times.
+- **Limited Web Compatibility**: Not suitable for web use due to size and lack of widespread browser support.
+- **Complexity**: TIFF’s features make it more demanding in terms of file handling and software requirements compared to simpler formats like PNG or JPEG.
 
-- **Versatility**: Suitable for various applications, including scanning, printing, and professional photography, due to its flexibility in handling different types of data.
+### Comparison with PNG
 
-- **Layer Support**: The ability to store multiple layers and pages within a single file facilitates complex editing workflows and document management.
+While both TIFF and PNG are lossless formats, they cater to different needs:
 
-- **Rich Metadata**: Embedding detailed metadata helps in organizing, managing, and preserving image information, which is essential for professional use.
+- **File Size**: PNG files are generally smaller, suitable for web and digital media, while TIFF is preferred for print-quality, detailed images.
+- **Bit Depth**: TIFF supports higher bit depths (up to 32-bit), making it suitable for HDR and detailed texture work, while PNG maxes out at 16-bit.
+- **Transparency and Layers**: Both support transparency, but TIFF's layering support makes it ideal for complex edits and compositing.
+- **Color Space**: TIFF supports a wider range of color spaces, including CMYK, which is necessary for print, whereas PNG is mainly RGB-focused.
+
+
 
 ## References
 
