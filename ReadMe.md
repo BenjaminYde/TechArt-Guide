@@ -45,6 +45,11 @@ Want to see what topics are in todo? See the **index per category**.
   - Using OpenUSD In Houdini
     - [Creating and loading USD files](./guide/houdini/usd/creating_and_loading.md)
 
+## Programming
+
+- [Python](https://github.com/BenjaminYde/Python-Guide) ( other guide of Benjamin )
+- [C++](https://github.com/BenjaminYde/CPlusPlus-Guide) ( other guide of Benjamin )
+
 ## Rendering
 
 - [Math](./guide/math/_index.md)
