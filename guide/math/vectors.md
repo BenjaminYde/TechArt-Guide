@@ -6,17 +6,17 @@ A vector is a mathematical object representing both a **direction** and a **magn
 
 ### Notation and Representation
 
-- **Components:** A vector in 3D is represented as $\mathbf{v} = (x, y, z)$, where $x$, $y$, and $z$ are its components along each axis.
+A vector in 3D is represented as 3 components along an axis: 
 
-- **Magnitude (Length):** The length of a vector $\mathbf{v} = (x, y, z)$ is calculated as: $|\mathbf{v}| = \sqrt{x^2 + y^2 + z^2}$ 
-
-    (see [Pythagoras' Theorem](https://www.mathsisfun.com/pythagoras.html))
+![Img](./static/vectors/vector_notation.png)
 
 ### Types of Vectors
 
 - **Position Vectors:** Describe points in space relative to the origin (e.g., $\mathbf{p} = (x, y, z)$).
 - **Direction Vectors:** Define only the direction and are often normalized (unit vectors, so length 1).
 
+
+![Img](./static/vectors/vector_3d.png)
 ![Img](./static/vectors/direction_magnitude.png)
 
 ## Applications in 3D Rendering
@@ -42,10 +42,14 @@ Lighting models use vectors to calculate illumination:
 
 ## Calculating the magnitude
 
-Let's say you have a position XY of `(3,2)`, then the magnitude is calculated as follows: $|\mathbf{a}| = \sqrt{x^2 + y^2} = \sqrt{3^2 + 2^2} = 3.61$       
-See image below:
+**Magnitude (Length):** The length of a vector is calculated using the [Pythagoras' Theorem](https://www.mathsisfun.com/pythagoras.html):
 
-![Img](./static/vectors/magnitude.png)
+![Img](./static/vectors/length_vector_notation.png)
+
+Let's say you have a position XY of `(3,2)`, then the magnitude is calculated as follows: 
+
+![Img](./static/vectors/magnitude_example_notation.png)
+![Img](./static/vectors/magnitude_example.png)
 
 ## Vector Operations
 
@@ -53,40 +57,38 @@ See image below:
 
 **Addition:** Adding two vectors results in a new vector that represents moving from the start of the first vector to the end of the second vector:
 
-$$
-\mathbf{u} + \mathbf{v} = (u_x + v_x,\ u_y + v_y,\ u_z + v_z)
-$$
+![Img](./static/vectors/addition_notation.png)
+![Img](./static/vectors/addition_example.png)
 
-> [!CAUTION]
-> TODO...
+And it doesn't matter which order we add them, we get the same direction.
 
 **Subtraction:** Represents the vector pointing from one vector to another:
 
-$$
-\mathbf{u} - \mathbf{v} = (u_x - v_x,\ u_y - v_y,\ u_z - v_z)
-$$
-
-> [!CAUTION]
-> TODO...
+![Img](./static/vectors/subtraction_notation.png)   
+![Img](./static/vectors/subtraction_example.png)
 
 ### Scalar Multiplication
 
+A scalar is just a number (like 7 or −0.32), so definitely not a vector.    
 Multiplying a vector by a scalar changes its magnitude without altering its direction:
 
-$$
-k \cdot \mathbf{v} = (k \cdot x,\ k \cdot y,\ k \cdot z)
-$$
+![Img](./static/vectors/scalar_multiplication_notation.png)
 
-See https://www.mathsisfun.com/algebra/vectors.html image
+In the following example the vector in blue is multiplier 2.5x times.
+It still points in the same direction, but is 2.5x times longer:
 
-> [!CAUTION]
-> TODO...
+![Img](./static/vectors/scalar_multiplication_example2.png)   
+![Img](./static/vectors/scalar_multiplication_example.png)
 
 ## Normalization
 
 Normalization scales a vector to a unit vector (length of 1). Basically you divide the vector by its own lenth and you get a normalized vector: 
 
-$\hat{\mathbf{a}} = \frac{\mathbf{a}}{|\mathbf{a}|}$
+![Img](./static/vectors/normalization_notation.png)
+
+In the following example we have the vector `(3,4)` which we divide by it's own length to get a normalized vector.
+
+![Img](./static/vectors/normalization_example.png)
 
 **Application:**
 
@@ -96,9 +98,13 @@ $\hat{\mathbf{a}} = \frac{\mathbf{a}}{|\mathbf{a}|}$
 
 The dot product (scalar product) is calculated as:
 
-$$
-\mathbf{u} \cdot \mathbf{v} = u_x v_x + u_y v_y + u_z v_z
-$$
+![Img](./static/vectors/dot_product_notation.png)
+
+
+In the following example we have 2 vector where we calculate the dot product:
+
+![Img](./static/vectors/dot_product_example2.png)   
+![Img](./static/vectors/dot_product_example.png)
 
 **Applications:**
 
@@ -136,3 +142,5 @@ $$
 - https://mathinsight.org/vector_introduction
 - https://www.mathsisfun.com/algebra/vectors.html
 - https://tutors.com/lesson/what-is-a-vector
+- https://www.intmath.com/vectors/vectors-intro.php
+- https://latexeditor.lagrida.com/

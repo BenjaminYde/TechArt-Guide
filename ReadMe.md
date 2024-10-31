@@ -26,6 +26,11 @@ Want to see what topics are in todo? See the **index per category**.
   - [Lenses, Focal Length & Sensors](./guide/camera/lenses.md)
   - [Depth of Field](./guide/camera/depth_of_field.md)
 
+## Programming
+
+- [Python](https://github.com/BenjaminYde/Python-Guide) ( other guide of Benjamin )
+- [C++](https://github.com/BenjaminYde/CPlusPlus-Guide) ( other guide of Benjamin )
+
 ## Houdini, OpenUSD
 
 - [OpenUSD](./guide/usd/_index.md)
@@ -44,11 +49,6 @@ Want to see what topics are in todo? See the **index per category**.
   - [COPS](./guide/houdini/cops.md)
   - Using OpenUSD In Houdini
     - [Creating and loading USD files](./guide/houdini/usd/creating_and_loading.md)
-
-## Programming
-
-- [Python](https://github.com/BenjaminYde/Python-Guide) ( other guide of Benjamin )
-- [C++](https://github.com/BenjaminYde/CPlusPlus-Guide) ( other guide of Benjamin )
 
 ## Rendering
 
