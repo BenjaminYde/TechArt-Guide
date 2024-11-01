@@ -94,9 +94,36 @@ In the following example we have the vector `(3,4)` which we divide by it's own 
 
 - **Direction Vectors:** In lighting and camera movement, normalized vectors help simplify calculations by keeping the focus on direction only.
 
+## Polar Vector Coordinate
+
+Let's say we have the following vector `a`:
+
+![Img](./static/vectors/polar_vector1.png)
+
+To get the X and Y components of the vector we can use trigonometry:
+
+![Img](./static/vectors/polar_component_x.png)
+![Img](./static/vectors/polar_component_y.png)
+
+Then vector `a` is noted as follows:
+
+![Img](./static/vectors/polar_vector2.png)
+
 ## Dot Product
 
-The dot product (scalar product) is calculated as:
+### Applications
+
+- **Angle Calculation:** The dot product can determine the angle $\theta$ between two vectors.
+
+- **Lighting:** The angle between a light direction and a surface normal determines the brightness in diffuse lighting.
+
+- **Projection**: The dot product helps project one vector onto another.
+
+- **Determining View and Visibility**: In rendering, the dot product can be used to determine if a surface is facing the camera or away from it. This helps with culling and optimizations.
+
+### Cartesian Coordinate Dot Product
+
+The dot product between vector A and vector B is equal to the sum of the products of each component which is calculated as follows:
 
 ![Img](./static/vectors/dot_product_notation.png)
 
@@ -106,20 +133,44 @@ In the following example we have 2 vector where we calculate the dot product:
 ![Img](./static/vectors/dot_product_example2.png)   
 ![Img](./static/vectors/dot_product_example.png)
 
-**Applications:**
+### Interpretation
 
-- **Angle Calculation:** The dot product can determine the angle $\theta$ between two vectors:
+The dot product provides insight into the relationship between two vectors:
 
-  $$
-  \cos(\theta) = \frac{\mathbf{u} \cdot \mathbf{v}}{|\mathbf{u}|\, |\mathbf{v}|}
-  $$
+- If `a.b > 0`: The angle between `a` and `b` is less than 90°. This means the vectors are pointing in roughly the same direction.
+- If `a.b < 0`: The angle between `a` and `b` is greater than 90°. This means the vectors are pointing in roughly opposite directions.
+- If `a.b == 0`: The vectors are orthogonal (perpendicular) to each other, meaning they form a 90° angle.
 
-- **Lighting:** The angle between a light direction and a surface normal determines the brightness in diffuse lighting.
+### Polar Coordinate Dot Product
+
+Let's say we have the following vectors `a` and `b`:
+
+![Img](./static/vectors/dot_product_example_polar.png)
+
+Vector `a` and `b` are represented as follows:
+
+![Img](./static/vectors/dot_product_a.png)
+![Img](./static/vectors/dot_product_b.png)
+
+Now we can calculate the dot product:
+
+![Img](./static/vectors/dot_product_polar_calculation.png)
 
 
-> [!CAUTION]
-> TODO...
+> [!NOTE]
+> In the calculation above we used the trigonometric identity for the cosine of the difference of two angles:
+> ![Img](./static/vectors/cos_identity_rule.png)    
+> More info about this [here](https://mymission.lamission.edu/userdata/sargsye2/docs/Math%20240/Proof%20of%20the%20difference%20formula%20for%20cosine.pdf).
 
+Therefore we have:
+
+![Img](./static/vectors/dot_product_polar.png)
+
+### Calculating the Angle Between Vectors
+
+From the above statement we can now easily calculate the angle:
+
+![Img](./static/vectors/dot_product_angle.png)
 
 ## Cross Product
 
