@@ -46,3 +46,23 @@
 ```
 \theta = arccos \left( \frac{\mathbf{a} \cdot \mathbf{b}}{||\overrightarrow{a}|| ||\overrightarrow{b}||} \right)
 ```
+
+# Cross Product
+
+```
+\mathbf{a} \times \mathbf{b} = 
+\begin{pmatrix}a_1
+ \\a_2
+ \\a_3
+\end{pmatrix}
+\times
+\begin{pmatrix}b_1
+ \\b_2
+ \\b_3
+\end{pmatrix}
+=
+\begin{pmatrix}a_2 b_3 - a_3 b_2
+ \\a_3 b_1 - a_1 b_3
+ \\a_1 b_2 - a_2 b_1
+\end{pmatrix}
+```

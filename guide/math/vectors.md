@@ -174,19 +174,17 @@ From the above statement we can now easily calculate the angle:
 
 ## Cross Product
 
-The cross product between two vectors $\mathbf{u}$ and $\mathbf{v}$ produces a third vector that is perpendicular to both:
+The cross product between two vectors `a` and `b` produces a third vector `c` that is perpendicular to both:
 
-$$
-\mathbf{u} \times \mathbf{v} = \left( u_y v_z - u_z v_y,\ u_z v_x - u_x v_z,\ u_x v_y - u_y v_x \right)
-$$
+![Img](./static/vectors/cross_product_3d.png)
 
-**Applications:**
+How to calculate the cross product:
 
-- **Surface Normals:** Useful for finding normals in 3D models.
-- **Rotations:** Determines rotational directions and axes.
+![Img](./static/vectors/cross_product.png)
 
-> [!CAUTION]
-> TODO...
+### Applications in 3D Rendering
+
+- **Surface Normals:** These are vectors perpendicular to a surface. They are essential for lighting calculations, as they determine how light interacts with the surface.
 
 ## References
 
