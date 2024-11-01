@@ -47,13 +47,12 @@ Want to see what topics are in todo? See the **index per category**.
   - [Scripting](./guide/usd/scripting.md)
 - [Houdini](./guide/houdini/_index.md)
   - [COPS](./guide/houdini/cops.md)
-  - Using OpenUSD In Houdini
-    - [Creating and loading USD files](./guide/houdini/usd/creating_and_loading.md)
 
 ## Rendering
 
 - [Math](./guide/math/_index.md)
   - [Vectors](./guide/math/vectors.md)
+  - [Matrices](./guide/math/matrices.md)
 - [PBR](./guide/pbr/_index.md)
   - [Normal And Height Maps](./guide/pbr/normal_and_height_maps.md)
   - [MaterialX](./guide/pbr/materialx.md)
