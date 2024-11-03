@@ -56,6 +56,7 @@ Want to see what topics are in todo? See the **index per category**.
 - [PBR](./guide/pbr/_index.md)
   - [Normal And Height Maps](./guide/pbr/normal_and_height_maps.md)
   - [MaterialX](./guide/pbr/materialx.md)
+  - [Texturing Process Examples](./guide/pbr/texturing_examples.md)
 - [Vulkan API](./guide/vulkan/_index.md)
   - [About Vulkan](./guide/vulkan/about.md)
   - [Graphics Pipeline](./guide/vulkan/graphics_pipeline.md)

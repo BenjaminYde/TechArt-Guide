@@ -49,6 +49,8 @@
 
 # Cross Product
 
+![Img](./cross_product.png)
+
 ```
 \mathbf{a} \times \mathbf{b} = 
 \begin{pmatrix}a_1
