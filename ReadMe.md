@@ -30,6 +30,7 @@ Want to see what topics are in todo? See the **index per category**.
 
 - [Python](https://github.com/BenjaminYde/Python-Guide) ( other guide of Benjamin )
 - [C++](https://github.com/BenjaminYde/CPlusPlus-Guide) ( other guide of Benjamin )
+- [Linux, Docker & Git](https://github.com/BenjaminYde/Linux-Guide) ( other guide of Benjamin )
 
 ## Houdini, OpenUSD
 
