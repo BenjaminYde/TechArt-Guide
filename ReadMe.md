@@ -48,6 +48,8 @@ Want to see what topics are in todo? See the **index per category**.
   - [Scripting](./guide/usd/scripting.md)
 - [Houdini](./guide/houdini/_index.md)
   - [COPS](./guide/houdini/cops.md)
+  - [VEX](./guide/houdini/vex/_index.md)
+    - [Transformations](./guide/houdini/vex/transformations.md)
 
 ## Rendering
 
