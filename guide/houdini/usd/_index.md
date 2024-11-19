@@ -3,9 +3,10 @@
 TODO:
 
 - Introduction To Solaris
-- Node Overview
+- [LOP Node Overview](./node_overview.md)
 - Creating, Exporting and Importing a Simple USD
 - Creating Meshes Using The SopCreate Node
-- Working With Multiple USD files
-- Working With VEX in LOPS/USD
-- Working With Python in LOPS/USD
+- Multiple USD files
+- VEX in Solaris
+- Python in Solaris
+- USD Asset Resolver
