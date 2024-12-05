@@ -1,0 +1,37 @@
+#usda 1.0
+(
+    endTimeCode = 1
+    framesPerSecond = 24
+    metersPerUnit = 1
+    startTimeCode = 1
+    timeCodesPerSecond = 24
+    upAxis = "Y"
+)
+
+def Cube "cube_rotate_xyz"
+{
+    float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+    double size = 2
+    float3 xformOp:rotateXYZ = (5, 10, 15)
+    float3 xformOp:scale = (0.5, 0.7, 0.2)
+    double3 xformOp:translate = (0, 1, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+
+def Cube "cube_matrix"
+{
+    float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+    double size = 2
+    matrix4d xformOp:transform:transform_xyz = ( (0.47562562128209884, 0.12744350112208938, -0.08682408883346517, 0), (-0.17025079259501605, 0.6763170870030456, 0.06008215582420189, 0), (0.03793011150556688, -0.007882710143780785, 0.1962120524380814, 0), (0, 1, 0, 1) )
+    uniform token[] xformOpOrder = ["xformOp:transform", "xformOp:transform:transform_xyz"]
+}
+
+def Cube "cube_orient"
+{
+    float3[] extent = [(-1, -1, -1), (1, 1, 1)]
+    double size = 2
+    quatd xformOp:orient = (0.9872282881762725, 0.031716372848194736, 0.09199967716329646, 0.12613658517555557)
+    float3 xformOp:scale = (0.5, 0.7, 0.2)
+    double3 xformOp:translate = (0, 1, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+}

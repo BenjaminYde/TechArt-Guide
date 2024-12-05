@@ -1,0 +1,129 @@
+FROM nvidia_openusd-2408-py310:latest AS nvidia_openusd
+
+# NVIDIA BASE
+FROM ubuntu:22.04
+LABEL author="benjamin.yde@gmail.com"
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install Development APT Packages
+RUN apt -qq update && \
+    apt -qq install -y --no-install-recommends \
+        apt-utils \
+        bash-completion \
+        curl \
+        git \
+        git-lfs \
+        nano \
+        openssh-client \
+        python-is-python3 \
+        python3 \
+        python3-pip \
+        python3-dev \
+        rsync \
+        sudo \
+        unzip \
+        tar \
+        xz-utils \
+        wget \
+        zsh \
+        && \
+    apt -qq clean && \
+    apt -qq autoclean && \
+    apt -qq remove && \
+    apt -qq autoremove -y && \
+    rm -rf /var/lib/apt/lists
+
+# Install CMAKE
+ENV CMAKE_VERSION 3.31.1
+RUN apt update && \
+    apt -qq install -y --no-install-recommends \
+        graphviz \
+    && \
+    cd /tmp && \
+    wget --no-check-certificate https://github.com/Kitware/CMake/releases/download/v${CMAKE_VERSION}/cmake-${CMAKE_VERSION}-linux-x86_64.tar.gz && \
+    tar -xzvf cmake-${CMAKE_VERSION}-linux-x86_64.tar.gz && \
+    mv cmake-${CMAKE_VERSION}-linux-x86_64 /opt/cmake && \
+    rm cmake-${CMAKE_VERSION}-linux-x86_64.tar.gz
+ENV PATH="/opt/cmake/bin:${PATH}"
+
+# Download and install Clang binaries
+ENV CLANG_VERSION 19.1.4
+RUN cd /tmp && \
+    curl -L -O https://github.com/llvm/llvm-project/releases/download/llvmorg-${CLANG_VERSION}/LLVM-${CLANG_VERSION}-Linux-X64.tar.xz && \
+    tar -xJvf LLVM-${CLANG_VERSION}-Linux-X64.tar.xz && \
+    rm LLVM-${CLANG_VERSION}-Linux-X64.tar.xz
+
+# Install Clang
+RUN cd /tmp && \
+    mkdir /opt/LLVM-${CLANG_VERSION} && \
+    mv LLVM-${CLANG_VERSION}-Linux-X64/* /opt/LLVM-${CLANG_VERSION}
+ENV PATH="/opt/LLVM-${CLANG_VERSION}/bin:${PATH}"
+
+# Install XServer dependencies
+RUN apt-get update && apt-get install -y --install-recommends \
+    # open gl
+    libegl1-mesa-dev \    
+    libgl1-mesa-dev \
+    libgles2-mesa-dev \
+    # x general
+    libxrandr-dev \
+    libxinerama-dev \
+    libxcursor-dev \
+    xauth \
+    libx11-dev \
+    libx11-xcb-dev \
+    libxi-dev \
+    libxcb1-dev \
+    libxcb-randr0-dev \
+    libxfixes-dev \
+    libxss-dev \
+    libxkbcommon-dev\ 
+    libxcb-icccm4 libxcb-icccm4-dev \
+    libxcb-image0 libxcb-image0-dev \
+    libxcb-keysyms1 libxcb-keysyms1-dev \
+    libxcb-render-util0 libxcb-render-util0-dev \
+    libxcb-shape0 libxcb-shape0-dev \
+    libxcb-xinerama0 libxcb-xinerama0-dev \
+    libxcb-xkb1 libxcb-xkb-dev \
+    libxkbcommon-x11-0 libxkbcommon-x11-dev \
+    libdbus-1-3 libdbus-1-dev
+
+# Install OpenUSD
+RUN python3 -m pip install -q --retries 10000 --timeout 60 --no-cache-dir \
+    usd-core==24.8
+
+COPY --from=nvidia_openusd /opt/usd_2408_py310 /opt/usd_2408_py310
+
+# Create User
+RUN useradd --create-home --user-group --groups sudo --uid 1000 developer && \
+    chown -R developer:developer /home/developer && \
+    printf "\developer ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+ENV USER=developer \
+    PATH=/home/developer/.local/bin:$PATH
+USER developer
+WORKDIR /home/developer
+
+# Install ZSH
+RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && \
+    rm .zshrc && \
+    touch .zshrc && \
+    echo '\n# ZSH' >> .zshrc && \
+    echo "export ZSH=\"/home/developer/.oh-my-zsh\"" >> .zshrc && \
+    echo "export ZSH_THEME=\"eastwood\"" >> .zshrc && \
+    echo "plugins=(git)" >> .zshrc && \
+    echo "source /home/developer/.oh-my-zsh/oh-my-zsh.sh" >> .zshrc
+
+# Configure OpenUSD
+RUN for shell_config in .shrc .bashrc .zshrc; do \
+        echo '\n# OpenUSD' >> ~/$shell_config && \
+        # usd
+        echo 'export PYTHONPATH="/opt/usd_2408_py310/lib/python:$PYTHONPATH"' >> ~/$shell_config && \
+        echo 'export PYTHONPATH="/opt/usd_2408_py310/pip-packages:$PYTHONPATH"' >> ~/$shell_config && \
+        echo 'export PATH="/opt/usd_2408_py310/bin:$PATH"' >> ~/$shell_config; \
+        # usdview plugins
+        echo 'export PYTHONPATH="/home/developer/TechArt-Guide/tools/usdview/plugins:$PYTHONPATH"' >> ~/$shell_config; \
+        echo 'export PXR_PLUGINPATH_NAME="/home/developer/TechArt-Guide/tools/usdview/plugins/auto_reloader:$PXR_PLUGINPATH_NAME"' >> ~/$shell_config; \
+    done
+
+ENTRYPOINT [ "/usr/bin/zsh" ]

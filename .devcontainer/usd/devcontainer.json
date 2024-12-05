@@ -1,0 +1,30 @@
+{
+	"name": "techart_guide_usd",
+	"dockerComposeFile": "docker-compose.yaml",
+	"service": "devcontainer",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"mhutchie.git-graph",
+				"marlongerson.jetbrains-icons",
+				"ms-python.python",
+				"ms-vscode-remote.remote-containers",
+				"ms-vscode-remote.remote-ssh",
+			],
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "zsh",
+				"terminal.integrated.profiles.linux": {
+					"Azure Cloud Shell (Bash)": null,
+					"Azure Cloud Shell (PowerShell)": null,
+					"JavaScript Debug Terminal": null,
+					"bash": null,
+					"zsh": {
+						"path": "/usr/bin/zsh"
+					}
+				}
+			}
+		}
+	},
+	"workspaceFolder": "/home/developer/TechArt-Guide",
+	"initializeCommand": ".devcontainer/usd/boostrap_host.sh"
+}

@@ -1,0 +1,27 @@
+services:
+  devcontainer:
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    build:
+      context: ../..
+      dockerfile: .devcontainer/usd/Dockerfile.devcontainer
+    user: developer
+    volumes:
+      # workspace
+      - ../..:/home/developer/TechArt-Guide
+      # host related
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /dev:/dev:rw
+    environment:
+      # host related
+      - DISPLAY=$DISPLAY
+      - XAUTHORITY=$XAUTHORITY
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    network_mode: host
