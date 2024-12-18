@@ -62,6 +62,7 @@ Want to see what topics are in todo? See the **index per category**.
 ### Simulations
 
 - [Physics Engines](./guide/simulation/physics_engines.md)
+- [Solvers](./guide/simulation/solvers.md)
 
 ## Rendering
 
