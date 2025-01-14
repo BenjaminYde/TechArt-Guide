@@ -74,22 +74,13 @@ The closer the camera is to the subject, the shallower the DoF. Moving away from
 
 ## Calculate The Depth of Field
 
+Online calculation tools here:
+
+- https://www.omnicalculator.com/other/depth-of-field#how-to-use-the-dof-calculator
+- https://dofsimulator.net/en/
+
 ![Img](static/dof/circle_of_confusion_4.png)
 ![Img](static/dof/calculate_dof_1.png)
-
-**Online dof calculation tool [here](https://www.ipsecu.com/tools/dof/).**
-
-It can be seen from the calculation formula of the depth of field that the depth of field is related to the lens aperture, focal length, shooting distance and the size of the permissible circle of confusion. As analyzed above, the size of the circle of confusion is determined by the sensor size, so when a camera with a certain solution (known sensor size), its depth of field is mainly affected by the lens aperture, focal length and shooting distance.
-
-From the calculation formula of the depth of field, it is not difficult to see:
-
-1. The larger the aperture, the smaller the depth of field; the smaller the aperture, the greater the depth of field;
-
-2. The longer the focal length of the lens, the smaller the depth of field; the shorter the focal length, the greater the depth of field;
-
-3. The farther the distance, the greater the depth of field; the closer the distance, the smaller the depth of field.
-
-![Img](static/dof/calculate_dof_2.png)
 
 ## References
 
