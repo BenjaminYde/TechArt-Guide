@@ -26,7 +26,7 @@ Want to see what topics are in todo? See the **index per category**.
 - [Shutter Speed](./guide/camera/shutter_speed.md)
 - [Aperture](./guide/camera/aperture.md)
 - [ISO](./guide/camera/iso.md)
-- [Lenses, Focal Length & Sensors](./guide/camera/lenses.md)
+- [Lenses, Focal Length & Sensors](./guide/camera/lenses_and_sensors.md)
 - [Depth of Field](./guide/camera/depth_of_field.md)
 
 ## Programming

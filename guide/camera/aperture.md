@@ -6,9 +6,9 @@ Aperture refers to the opening in a camera lens through which light passes to en
 
 The f-stop number is inversely related to the aperture size: the smaller the f-stop number, the larger the aperture opening, and vice versa. For example, an aperture of f/2.8 allows much more light to pass through the lens than an aperture of f/16. This principle is fundamental in controlling exposure; a larger aperture (small f-stop) will result in a brighter image, while a smaller aperture (large f-stop) will yield a darker image.
 
-![alt text](static/aperture/chart_wide_narrow.png)
-![alt text](static/aperture/exposure.png)
-![alt text](static/aperture/night.png)
+![Img](static/aperture/light_passthrough.png)
+![Img](static/aperture/exposure.png)
+![Img](static/aperture/night.png)
 
 ## Aperture's Impact on Depth of Field
 
@@ -18,8 +18,10 @@ One of the most significant effects of changing the aperture is the alteration o
 
 **A small aperture** (e.g., f/16) will yield a deeper depth of field, with a larger portion of the image from foreground to background appearing in focus, ideal for landscape photography.
 
-![alt text](static/aperture/dof_compare.png)
+![Img](static/aperture/dof_compare.png)
+![Img](static/aperture/chart_wide_narrow.png)
 
 ## Reference
 
 - https://photographylife.com/what-is-aperture-in-photography
+- https://www.opto-e.com/en/basics/optics-basics

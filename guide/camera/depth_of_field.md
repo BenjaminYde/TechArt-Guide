@@ -27,8 +27,8 @@ When taking a photo, there's a specific area that will be in clear focus. This a
 ![Img](static/dof/dof_example_tree_1.png)
 
 The DoF consists out of:
-- a **focus point**, the point you want to capture and will be your most sharp point in the image you capture.
-- a **circle of confusion (CoF) focus limit size**, the treshold of when something becomes blurry which has a start and end distance (radius from the focus point):
+- A **focus point**, the point you want to capture and will be your most sharp point in the image you capture.
+- A **circle of confusion (CoF) focus limit size**, the treshold of when something becomes blurry which has a start and end distance (radius from the focus point):
 
 ![Img](static/dof/dof_example_tree_2.png)
 
@@ -43,19 +43,19 @@ The blurry zone varies from image to image depending on a number of variables, i
 
 ### 1. Distance To The Subject
 
-The closer the camera is to the subject, the shallower the DoF. Moving away from the subject increases the DoF.
+The closer the camera is to the subject, the shallower the DoF. Moving away from the subject increases the DoF. Below you can finds 3 different examples where each example moves the focus point a bit farther. Each image has the same **Circle of Confusion Limit** (min treshold for sharpness).
 
 #### Small distance from focus point => Small DoF area:
 
-![Img](static/dof/distance_1.png)
+![Img](./static/dof/distance_1.png)
 
 #### Medium distance from focus point => Medium DoF area:
 
-![Img](static/dof/distance_2.png)
+![Img](./static/dof/distance_2.png)
 
 #### Large distance from focus point => Large DoF area:
 
-![Img](static/dof/distance_3.png)
+![Img](./static/dof/distance_3.png)
 
 ### 2. Sensor Size / Focal Length
 
@@ -72,15 +72,40 @@ The closer the camera is to the subject, the shallower the DoF. Moving away from
 
 ![Img](static/dof/calculate_dof_2.png)
 
+## Hyperfocal Distance
+
+### When do you need this?
+
+Consider a landscape where you want the foreground and background to appear sharp. If you focus on the foreground, the background will appear blurry in the image. And if you focus on the background, the foreground will look out of focus! How do you fix this? Simple: you focus at a particular point between the foreground and the background, which makes both the foreground and the background elements of the scene appear reasonably sharp. This focusing point is called the **hyperfocal distance**.
+
+### Everything Is Acceptably Sharp
+
+The Hyperfocal distance is a specific focus distance that **maximizes the depth of field** for a given aperture and focal length, making everything from half this distance to infinity acceptably sharp.
+
+It's **calculated** based on your **focal length and aperture**, and an acceptable level of blur (**circle of confusion**). You don't arbitrarily choose it; you calculate or look it up.
+
+While a wide range is **acceptably sharp**, the point of critical sharpness is still at the hyperfocal distance. Objects closer than the hyperfocal distance will be less sharp than they would be if you had focused directly on them. It's a trade-off between overall sharpness range and pinpoint sharpness at a specific distance.
+
+### Calculate the Hyperfocal Distance
+
+![Img](./static/dof/hyperfocal_formula.png)
+
 ## Calculate The Depth of Field
 
-Online calculation tools here:
+### How To Calculate It
+
+The depth of field is the distance between the depth of field far limit and the depth of field near limit. We can express that in an equation form like this:
+
+![Img](./static/dof/dof_formula.png)
+
+Which is
+
+![Img](./static/dof/dof_far_near_formula.png)
+
+### Online Calculation Tools
 
 - https://www.omnicalculator.com/other/depth-of-field#how-to-use-the-dof-calculator
 - https://dofsimulator.net/en/
-
-![Img](static/dof/circle_of_confusion_4.png)
-![Img](static/dof/calculate_dof_1.png)
 
 ## References
 
@@ -90,3 +115,5 @@ Online calculation tools here:
 - https://www.ipsecu.com/articles/depth-of-field/
 - https://www.specim.com/how-to-calculate-the-depth-of-field-dof-with-the-specim-hyperspectral-cameras/
 - https://www.digitalcameraworld.com/tutorials/photography-cheat-sheet-what-are-circles-of-confusion
+- http://www.alainwillemsphoto.com/wp-content/uploads/2020/06/Equivalent-focal-lenght-post_en.pdf
+- https://photographylife.com/hyperfocal-distance-explained
