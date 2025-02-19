@@ -48,6 +48,7 @@ Want to see what topics are in todo? See the **index per category**.
   - [Opinions and Overrides](./guide/usd/terminology/opinion_override.md)
   - [Composition Arcs](./guide/usd/terminology/composition_arc.md)
   - [Schemas](./guide/usd/terminology/schemas.md) 
+- [Talks](./guide/usd/talks.md)
 - [Sample Projects](./guide/usd/sample_projects.md)
 - [Scripting](./guide/usd/scripting.md)
 
