@@ -1,6 +1,9 @@
 # Transformations
 
-In VEX, transformations involve:
+> [!TIP]
+> Checkout the Houdini example at `reference/houdini/vex.hip`!
+
+In VEX, transformations involve
 
 - **Translation**: Moving points or primitives in space.
 - **Rotation**: Rotating elements around an axis.
@@ -32,7 +35,7 @@ vector offset = chv("offset");
 ```cpp
 float angle = radians(chf("angle"));
 matrix3 rot = ident();
-rot = rotate(rot, angle, {0, 1, 0});
+rotate(rot, angle, {0, 1, 0});
 @P *= rot;
 ```
 
@@ -74,12 +77,13 @@ vector translate = chv("translate");
 vector rotate = radians(chv("rotate")); // XYZ rotation in degrees
 vector scale = chv("scale");
 
+// TRS rule for matrices (scale > rotate > translate) in this order!
 matrix xform = ident();
-xform = translate(xform, translate);
-xform = rotate(xform, rotate.x, {1, 0, 0});
-xform = rotate(xform, rotate.y, {0, 1, 0});
-xform = rotate(xform, rotate.z, {0, 0, 1});
-xform = scale(xform, scale);
+scale(xform, scale);
+rotate(xform, rotate.x, {1, 0, 0});
+rotate(xform, rotate.y, {0, 1, 0});
+rotate(xform, rotate.z, {0, 0, 1});
+translate(xform, translate);
 
 @P *= xform;
 ```
@@ -96,19 +100,22 @@ float angle = radians(45);
 vector4 q = quaternion(angle, axis);
 ```
 
-#### Combining Quaternions
-
-```cpp
-vector4 q1 = quaternion(radians(30), {1, 0, 0});
-vector4 q2 = quaternion(radians(45), {0, 1, 0});
-vector4 q_result = qmultiply(q1, q2);
-```
-
 #### Rotating a Vector with a Quaternion
 
 ```cpp
-vector v = {1, 0, 0};
-vector rotated_v = qrotate(q, v);
+vector axis = {0, 1, 0};
+float angle = radians(chf("angle"));
+vector4 q = quaternion(angle, axis);
+@P = qrotate(q, @P);
+```
+
+#### Combining Quaternions
+
+```cpp
+vector4 q1 = quaternion(radians(chf("angle1")), {1, 0, 0}); // X
+vector4 q2 = quaternion(radians(chf("angle2")), {0, 1, 0}); // Y
+vector4 q_result = qmultiply(q1, q2);
+@P = qrotate(q_result, @P);
 ```
 
 #### Converting a Quaternion to a Rotation Matrix
@@ -124,8 +131,8 @@ The `@orient` attribute defines orientation using quaternions, often used in wor
 #### Creating an Orientation Quaternion
 
 ```cpp
-vector axis = {0, 1, 0}; // Axis of rotation
-float angle = radians(chf("angle")); // Angle of rotation
+vector axis = {0, 1, 0};
+float angle = radians(chf("angle"));
 @orient = quaternion(angle, axis);
 ```
 
@@ -134,6 +141,13 @@ float angle = radians(chf("angle")); // Angle of rotation
 ```cpp
 matrix3 rot = qconvert(@orient);
 @P *= rot;
+```
+
+#### Create `@orient` using Euler values
+
+```cpp
+ vector rot = radians(chv('euler'));
+ @orient = eulertoquaternion(rot, XFORM_XYZ);
 ```
 
 ## Matrices
@@ -147,15 +161,15 @@ Example:
 
 ```cpp
 // Scaling with matrix3
-matrix3 scale3 = ident();
-scale3 = scale(scale3, {2, 2, 2});
-@P *= scale3;
+matrix3 m = ident();
+scale(m, {2, 2, 2});
+@P *= m;
 
 // Full transformation with matrix
-matrix xform = ident();
-xform = translate(xform, {1, 0, 0});
-xform = scale(xform, {2, 2, 2});
-@P *= xform;
+matrix m = ident();
+translate(m, {1, 0, 0});
+scale(m, {2, 2, 2});
+@P *= m;
 ```
 
 ### Constructing Matrices
@@ -165,8 +179,16 @@ xform = scale(xform, {2, 2, 2});
 Create a 4x4 transformation matrix from translation, rotation, and scaling components:
 
 ```cpp
-matrix xform = maketransform(0, 0, translate, rotate, scale);
+matrix m = maketransform(XFORM_SRT, XFORM_XYZ, translate, rotate, scale);
 ```
+
+or using the up and forward axis:
+
+```cpp
+vector up = {0,1,0};
+matrix m = maketransform({1,0,1}, up)
+```
+See docs [here](https://www.sidefx.com/docs/houdini/vex/functions/maketransform.html).
 
 #### `lookat`
 

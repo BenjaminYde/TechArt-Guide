@@ -82,3 +82,6 @@ The validation layers help developers with this responsibility by providing real
 
 ![](./static/vulkan_app.png)
 
+## References
+
+- [alain.xyz - Raw Vulkan](https://alain.xyz/blog/raw-vulkan#vertex-buffers): An overview on how to program a Hello Triangle Vulkan application from the ground up.
