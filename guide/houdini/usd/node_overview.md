@@ -1,89 +1,93 @@
 # Node Overview
 
 > [!TIP]
-> Checkout the `lop_node_overview.hip` in the `references/open_usd` folder where you can find all nodes displayed per section.
+> Checkout the `./reference/houdini/lop_node_overview.hip` where you can find all nodes displayed per section.
 
 ## Geometry
 
 ### Simple Meshes
 
-todo
+![img](./static/node_overview/geometry/simple_meshes.png)
 
 ### Common Primitives
 
-todo
+![img](./static/node_overview/geometry/common_prims.png)
 
 ### Custom Meshes
 
-todo
+![img](./static/node_overview/geometry/custom_meshes.png)
 
 ### Other Geometry Related Primitives
 
-todo
+![img](./static/node_overview/geometry/other_mesh_related.png)
 
 ### Transform
 
-todo
+![img](./static/node_overview/geometry/transform.png)
 
 ## Rendering
 
 ### Lights
 
-todo
+![img](./static/node_overview/rendering/lights.png)
+
+### Light Control
+
+![img](./static/node_overview/rendering/light_control.png)
 
 ### Materials
 
-todo
+![img](./static/node_overview/rendering/materials.png)
 
 ### Render Settings
 
-todo
+![img](./static/node_overview/rendering/rendering.png)
 
 ## Composition
 
 ### Layering
 
-todo
+![img](./static/node_overview/composition/layering.png)
+
+### Layering Edit
+
+![img](./static/node_overview/composition/layering_edit.png)
 
 ### Configuring
 
-todo
+![img](./static/node_overview/composition/configuring.png)
 
 ### Structure
 
-todo
+![img](./static/node_overview/composition/structure.png)
 
 ### Variants
 
-todo
+![img](./static/node_overview/composition/variants.png)
 
-### Layer Edit
+### Caching
 
-todo
+![img](./static/node_overview/composition/caching.png)
 
 ## Tooling
 
 ### Control Flow
 
-todo
+![img](./static/node_overview/tooling/control_flow.png)
 
 ### Programming
 
-todo
-
-### Caching
-
-todo
+![img](./static/node_overview/tooling/programming.png)
 
 ## Solvers
 
-### Contstrains
+### constraints
 
-todo
+![img](./static/node_overview/tooling/constraints.png)
 
 ### Simulation
 
-todo
+![img](./static/node_overview/tooling/simulation.png)
 
 ## References
 
