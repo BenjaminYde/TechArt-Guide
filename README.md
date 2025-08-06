@@ -1,15 +1,32 @@
-# Welcome to the TechArt Guide 📚
+# The TechArt Guide 📚
 
-This repository is a TechArt guide designed to be opened as regular Markdown in the browser of in VS Code. 
-It contains extensive documentation, examples and best practices to help you become a proficient tech artist.
+<table width="100%" style="border: none;">
+<td width="50%" valign="top">
 
-# Guide Index 🗂️
+### 👋 Welcome!
 
-**The following index contains categories with topics that are ready for visibility or completed.**  
-There is **more content incoming** so the categories will **not be visible here** until it is completed.    
-Want to see what topics are in todo? See the **index per category**.
+This repository is a practical, **to-the-point guide** for tech artists looking to master topics like Houdini, OpenUSD, Math, how camera's & colors work, rendering, etc.. Whether you're a beginner taking your first steps or an experienced tech artist leveling up, you'll find extensive documentation, best practices and runnable code right here.
 
-## Visual Language
+The core philosophy is simple: **learn by doing**. I get straight to the point so you can spend less time reading and more time doing.
+</td>
+
+<td width="50%" valign="top">
+
+### 🚀 Explore Examples
+
+Explore the `📁 examples` directory where you can find projects that show you how to do certain things in certain ways. For example, you can find Houdini VEX code to see how it works. 
+
+Furthermore this repository is setup with a **Docker DevContainer** using **Visual Studio Code** so you can easily work within a consistent coding environment ideal for learning and experimentation. Tools like Python & OpenUSD are installed so you can get to work quickly without having the hassle to setup your environment.
+</td>
+</tr>
+</table>
+
+## 🗂️ Table of Contents 
+
+<table width="100%" style="border: none;">
+
+<tr valign="top">
+<td width="33%" style="padding-bottom: 15px;">
 
 ### Colors
 
@@ -20,6 +37,9 @@ Want to see what topics are in todo? See the **index per category**.
 - [More Color Spaces](./guide/color/more_color_spaces.md)
 - [HDR](./guide/color/hdr.md)
 - [File Formats](./guide/color/file_formats.md)
+</td>
+
+<td width="33%" style="padding-bottom: 15px;">
 
 ### Camera's
 
@@ -29,13 +49,21 @@ Want to see what topics are in todo? See the **index per category**.
 - [Lenses, Focal Length & Sensors](./guide/camera/lenses_and_sensors.md)
 - [Depth of Field](./guide/camera/depth_of_field.md)
 
-## Programming
+</td>
 
-- [Python](https://github.com/BenjaminYde/Python-Guide) ( other guide of Benjamin )
-- [C++](https://github.com/BenjaminYde/CPlusPlus-Guide) ( other guide of Benjamin )
-- [Linux, Docker & Git](https://github.com/BenjaminYde/Linux-Guide) ( other guide of Benjamin )
+<td width="33%" style="padding-bottom: 15px;">
 
-## Houdini, OpenUSD, Simulation
+### Programming
+(specialized guides)
+
+- [Python](https://github.com/BenjaminYde/Python-Guide)
+- [C++](https://github.com/BenjaminYde/CPlusPlus-Guide)
+- [Linux, Docker & Git](https://github.com/BenjaminYde/Linux-Guide)
+</td>
+</tr>
+
+<tr valign="top">
+<td width="33%" style="padding-bottom: 15px;">
 
 ### OpenUSD
 
@@ -51,6 +79,9 @@ Want to see what topics are in todo? See the **index per category**.
 - [Talks](./guide/usd/talks.md)
 - [Sample Projects](./guide/usd/sample_projects.md)
 - [Scripting](./guide/usd/scripting.md)
+</td>
+
+<td width="33%" style="padding-bottom: 15px;">
 
 ### Houdini
 
@@ -60,12 +91,20 @@ Want to see what topics are in todo? See the **index per category**.
 - [VEX](./guide/houdini/vex/_index.md)
   - [Transformations](./guide/houdini/vex/transformations.md)
 
+</td>
+
+<td width="33%" style="padding-bottom: 15px;">
+
 ### Simulations
 
 - [Physics Engines](./guide/simulation/physics_engines.md)
 - [Solvers](./guide/simulation/solvers.md)
 
-## Rendering
+</td>
+</tr>
+
+<tr valign="top">
+<td width="33%" style="padding-bottom: 15px;">
 
 ### Math
 
@@ -73,12 +112,18 @@ Want to see what topics are in todo? See the **index per category**.
 - [Matrices](./guide/math/matrices.md)
 - [Transformations](./guide/math/transformations.md)
 - [Coordinate Systems](./guide/math/coordinate_systems.md)
+</td>
+
+<td width="33%" style="padding-bottom: 15px;">
 
 ### PBR
 
 - [Normal And Height Maps](./guide/pbr/normal_and_height_maps.md)
 - [MaterialX](./guide/pbr/materialx.md)
 - [Texturing Process Examples](./guide/pbr/texturing_examples.md)
+</td>
+
+<td width="33%" style="padding-bottom: 15px;">
 
 ### Vulkan API
 
@@ -89,3 +134,6 @@ Want to see what topics are in todo? See the **index per category**.
 - [Views And Descriptors](./guide/vulkan/descriptors.md)
 - [Queues And Commands](./guide/vulkan/queues_and_commands.md)
 - [Synchronisation](./guide/vulkan/synchronisation.md)
+</td>
+</tr>
+</table>
