@@ -203,25 +203,38 @@ To maintain a consistent field of view with varying sensor sizes while controlli
 
 ## Understanding Sensor Size, Focal Length, and Field of View
 
-### In Short
-
-#### Angle of view (degrees)
+### Angle of view (AOV) = degrees
 
 Measures how much of a scene a lens can capture, expressed as an angle.
 
 ![Img](static/lenses/calculation_aov.png)
 
-#### Field of view (width)
+- $\text{aov}$ = Angle of view (in degrees)
+- $w$ = Sensor width (in mm)
+- $f$ = Focal length (in mm)
 
-The actual width (or height or diagonal) of the scene that is captured at a specific distance.
+### Field of view (FOV) = distance
+
+The actual width (or height) of the scene that is captured at a specific distance.
 
 ![Img](static/lenses/calculation_fov.png)
 
+- $\text{fov}$ = Field of view (in mm)
+- $d$ = Distance from the camera (in mm)
+- $\text{aov}$ = Angle of view (in degrees)
+
+### Sensor width from AOV
+
+![Img](static/lenses/calculation_sensor_size.png)
+
+- $w$ = Sensor width (in mm)
+- $f$ = Focal length (in mm)
+- $\text{aov}$ = The manufacturer's listed Angle of View (in degrees)
+
 > [!NOTE]  
-> Why the tiny `i`, you ask? This formula holds for all the three possible directions on the sensor: horizontal, vertical, and diagonal.
+> Why the tiny `i`, you ask? This formula holds for all the three possible directions on the sensor: horizontal, vertical and diagonal.
 
-
-### More Detailed
+## More Detailed
 
 The Calculation of the FOV involves applying a little trigonometry.
 
